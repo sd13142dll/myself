@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+body { min-width:1200px; line-height:1.5;-webkit-font-smoothing:antialiased; overflow-x:hidden; color:#ffffff; background-color:#fdf2c4;}
+.tl { text-align:left;}
+.tr { text-align:right;}
+.tc { text-align:center;}
+.fl { float:left;}
+.fr { float:right;}
+.pr { position:relative;}
+.pa { position:absolute;}
+.vm { vertical-align:middle;}
+.vt { vertical-align:top;}
+.db { display:block;}
+.dib { display:inline-block;}
+.whp100 { width:100%; height:100%;}
+.mt15 { margin-top:15px;}
+
+.banner { left:50%; width:1920px; height:630px; background-color:#fbcd1d; margin-left:-960px; overflow:hidden;}
+.bannerLight { left:50%; bottom:0; width:1920px; height:662px; background:url(../img/bannerLight.png) center 0 no-repeat; margin-left:-960px; opacity:0; opacity:1\9;}
+.bannerAni .bannerLight { -moz-animation:bannerLight 0.6s ease 0s both; -moz-transform-origin:50% 100%; -webkit-animation:bannerLight 0.6s ease 0s both; -webkit-transform-origin:50% 100%; animation:bannerLight 0.6s ease 0s both; transform-origin:50% 100%;}
+@-moz-keyframes bannerLight{
+	0% {  -moz-transform:scale(1.5,1.5) rotateZ(-30deg); opacity:0;}
+	100% { -moz-transform:scale(1,1) rotateZ(0); opacity:1;}
+}
+@-webkit-keyframes bannerLight{
+	0% {  -webkit-transform:scale(1.5,1.5) rotateZ(-30deg); opacity:0;}
+	100% { -webkit-transform:scale(1,1) rotateZ(0); opacity:1;}
+}
+@keyframes bannerLight{
+	0% {  transform:scale(1.5,1.5) rotateZ(-30deg); opacity:0;}
+	100% { transform:scale(1,1) rotateZ(0); opacity:1;}
+}
+
+.bannerGold { left:50%; bottom:34px; width:1700px; height:443px; background:url(../img/bannerGold.png) center 0 no-repeat; margin-left:-941px; opacity:0; opacity:1\9;}
+.bannerAni .bannerGold { -moz-animation:bannerGold 0.5s ease 0.5s both; -webkit-animation:bannerGold 0.5s ease 0.5s both; animation:bannerGold 0.5s ease 0.5s both;}
+@-moz-keyframes bannerGold{
+	0% {  -moz-transform:scale(1.4,1.4); opacity:0;}
+	100% { -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes bannerGold{
+	0% {  -webkit-transform:scale(1.4,1.4); opacity:0;}
+	100% { -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes bannerGold{
+	0% {  transform:scale(1.4,1.4); opacity:0;}
+	100% { transform:scale(1,1); opacity:1;}
+}
+
+.bannerCd { top:-8px; width:754px; height:135px; background:url(../img/bannerCd.png) no-repeat;}
+.bannerCd_l { left:-3px; background-position:0 0; opacity:0; opacity:1\9;}
+.bannerCd_r { right:-2px; background-position:100% 0; opacity:0; opacity:1\9;}
+.bannerAni .bannerCd_l { -moz-animation:fadeIn 0.5s ease 0.5s both,bannerCd_l 2s linear 0.8s infinite forwards; -moz-transform-origin:20% 0%; -webkit-animation:fadeIn 0.5s ease 0.5s both,bannerCd_l 2s linear 0.8s infinite forwards; -webkit-transform-origin:20% 0%; animation:fadeIn 0.5s ease 0.5s both,bannerCd_l 2s linear 0.8s infinite forwards; transform-origin:20% 0%;}
+@-moz-keyframes bannerCd_l{
+	0% {  -moz-transform:skew(0,0); opacity:1;}
+	50% { -moz-transform:skew(-5deg,0); opacity:1;}
+	100% { -moz-transform:skew(0,0); opacity:1;}
+}
+@-webkit-keyframes bannerCd_l{
+	0% {  -webkit-transform:skew(0,0); opacity:1;}
+	50% { -webkit-transform:skew(-5deg,0); opacity:1;}
+	100% { -webkit-transform:skew(0,0); opacity:1;}
+}
+@keyframes bannerCd_l{
+	0% {  transform:skew(0,0); opacity:1;}
+	50% { transform:skew(-5deg,0); opacity:1;}
+	100% { transform:skew(0,0); opacity:1;}
+}
+
+.bannerAni .bannerCd_r { -moz-animation:fadeIn 0.5s ease 0.5s both,bannerCd_r 2.1s linear 0.8s infinite forwards; -moz-transform-origin:80% 0%; -webkit-animation:fadeIn 0.5s ease 0.5s both,bannerCd_r 2.1s linear 0.8s infinite forwards; -webkit-transform-origin:80% 0%; animation:fadeIn 0.5s ease 0.5s both,bannerCd_r 2.1s linear 0.8s infinite forwards; transform-origin:80% 0%;}
+@-moz-keyframes bannerCd_r{
+	0% {  -moz-transform:skew(0,0); opacity:1;}
+	50% { -moz-transform:skew(5deg,0); opacity:1;}
+	100% { -moz-transform:skew(0,0); opacity:1;}
+}
+@-webkit-keyframes bannerCd_r{
+	0% {  -webkit-transform:skew(0,0); opacity:1;}
+	50% { -webkit-transform:skew(5deg,0); opacity:1;}
+	100% { -webkit-transform:skew(0,0); opacity:1;}
+}
+@keyframes bannerCd_r{
+	0% {  transform:skew(0,0); opacity:1;}
+	50% { transform:skew(5deg,0); opacity:1;}
+	100% { transform:skew(0,0); opacity:1;}
+}
+
+.bannerRocket { left:50%; top:78px; margin-left:10px;}
+.bannerRocket_t { width:63px; height:58px; background:url(../img/bannerRocket_t.png) no-repeat; margin-left:21px; opacity:0; opacity:1\9;}
+.bannerAni .bannerRocket_t { -moz-animation:fadeIn 0.4s linear 2.6s both,bannerRocket_t 0.5s step-start 2.6s infinite forwards; -webkit-animation:fadeIn 0.4s linear 2.6s both,bannerRocket_t 0.5s step-start 2.6s infinite forwards; animation:fadeIn 0.4s linear 2.6s both,bannerRocket_t 0.5s step-start 2.6s infinite forwards;}
+@-moz-keyframes bannerRocket_t {
+	0% { background-position:0 0; -moz-transform:translate(0,0); opacity:1;}
+	50% { background-position:-63px 0; -moz-transform:translate(2px,1px); opacity:1;}
+	100% { background-position:-126px 0; -moz-transform:translate(1px,2px); opacity:1;}
+}
+@-webkit-keyframes bannerRocket_t {
+	0% { background-position:0 0; -webkit-transform:translate(0,0); opacity:1;}
+	50% { background-position:-63px 0; -webkit-transform:translate(2px,1px); opacity:1;}
+	100% { background-position:-126px 0; -webkit-transform:translate(1px,2px); opacity:1;}
+}
+@keyframes bannerRocket_t {
+	0% { background-position:0 0; transform:translate(0,0); opacity:1;}
+	50% { background-position:-63px 0; transform:translate(2px,1px); opacity:1;}
+	100% { background-position:-126px 0; transform:translate(1px,2px); opacity:1;}
+}
+
+.bannerRocket_b { width:84px; height:73px; background:url(../img/bannerRocket_b.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .bannerRocket_b { -moz-animation:fadeIn 0.4s linear 2.4s both; -webkit-animation:fadeIn 0.4s linear 2.4s both; animation:fadeIn 0.4s linear 2.4s both;}
+
+.bannerTxt { left:50%; top:253px; width:1050px; height:298px; background:url(../img/bannerTxt.png) no-repeat; margin-left:-525px; opacity:0; opacity:1\9;}
+.bannerAni .bannerTxt { -moz-animation:bannerTxt 0.4s ease 1s both; -moz-transform-origin:28% 100%; -webkit-animation:bannerTxt 0.4s ease 1s both; -webkit-transform-origin:28% 100%; animation:bannerTxt 0.4s ease 1s both; transform-origin:28% 100%;}
+@-moz-keyframes bannerTxt{
+	0% {  -moz-transform:translate(0,100px) scale(0.5,0.5); opacity:0;}
+ 	42% {  -moz-transform:scale(1.05,1.05); opacity:1;}
+	100% {  -moz-transform:translate(0,0) scale(1,1); opacity:1;}
+}
+@-webkit-keyframes bannerTxt{
+	0% {  -webkit-transform:translate(0,100px) scale(0.5,0.5); opacity:0;}
+ 	42% {  -webkit-transform:scale(1.05,1.05); opacity:1;}
+	100% {  -webkit-transform:translate(0,0) scale(1,1); opacity:1;}
+}
+@keyframes bannerTxt{
+	0% {  transform:translate(0,100px) scale(0.5,0.5); opacity:0;}
+ 	42% {  transform:scale(1.05,1.05); opacity:1;}
+	100% {  transform:translate(0,0) scale(1,1); opacity:1;}
+}
+
+.bannerTxt_num { right:145px; top:10px; z-index:2; width:270px; height:201px; background:url(../img/bannerTxt_num.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .bannerTxt_num { -moz-animation:bannerTxt_num 0.4s ease 1.3s both; -moz-transform-origin:50% 100%; -webkit-animation:bannerTxt_num 0.4s ease 1.3s both; -webkit-transform-origin:50% 100%; animation:bannerTxt_num 0.4s ease 1.3s both; transform-origin:50% 100%;}
+@-moz-keyframes bannerTxt_num{
+	0% { -moz-transform:scale(0,0); opacity:0;}
+ 	20% { -moz-transform:scale(1.05,1.05); opacity:1;}
+	40% { -moz-transform:scale(0.97,0.97); opacity:1;}
+	60% { -moz-transform:scale(1.02,1.02); opacity:1;}
+	80% { -moz-transform:scale(0.99,0.99); opacity:1;}
+	100% { -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes bannerTxt_num{
+	0% { -webkit-transform:scale(0,0); opacity:0;}
+ 	20% { -webkit-transform:scale(1.05,1.05); opacity:1;}
+	40% { -webkit-transform:scale(0.97,0.97); opacity:1;}
+	60% { -webkit-transform:scale(1.02,1.02); opacity:1;}
+	80% { -webkit-transform:scale(0.99,0.99); opacity:1;}
+	100% { -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes bannerTxt_num{
+	0% { transform:scale(0,0); opacity:0;}
+ 	20% { transform:scale(1.05,1.05); opacity:1;}
+	40% { transform:scale(0.97,0.97); opacity:1;}
+	60% { transform:scale(1.02,1.02); opacity:1;}
+	80% { transform:scale(0.99,0.99); opacity:1;}
+	100% { transform:scale(1,1); opacity:1;}
+}
+
+.bannerTxt_arrow { z-index:1; width:94px; height:188px; background:url(../img/bannerTxt_arrow.png) no-repeat;}
+.bannerTxt_arrow01 { left:657px; top:-122px; opacity:0; opacity:1\9;}
+.bannerTxt_arrow02 { left:753px; top:-187px; opacity:0; opacity:1\9;}
+.bannerTxt_arrow03 { left:839px; top:-157px; opacity:0; opacity:1\9;}
+.bannerAni .bannerTxt_arrow01 { -moz-animation:bannerTxt_arrow 0.5s ease 1.5s both; -moz-transform-origin:50% 100%; -webkit-animation:bannerTxt_arrow 0.5s ease 1.5s both; -webkit-transform-origin:50% 100%; animation:bannerTxt_arrow 0.5s ease 1.5s both; transform-origin:50% 100%;}
+.bannerAni .bannerTxt_arrow02 { -moz-animation:bannerTxt_arrow 0.5s ease 1.7s both; -moz-transform-origin:50% 100%; -webkit-animation:bannerTxt_arrow 0.5s ease 1.7s both; -webkit-transform-origin:50% 100%; animation:bannerTxt_arrow 0.5s ease 1.7s both; transform-origin:50% 100%;}
+.bannerAni .bannerTxt_arrow03 { -moz-animation:bannerTxt_arrow 0.5s ease 1.9s both; -moz-transform-origin:50% 100%; -webkit-animation:bannerTxt_arrow 0.5s ease 1.9s both; -webkit-transform-origin:50% 100%; animation:bannerTxt_arrow 0.5s ease 1.9s both; transform-origin:50% 100%;}
+@-moz-keyframes bannerTxt_arrow{
+	0% {  -moz-transform:translate(0,80%); opacity:0;}
+ 	100% {  -moz-transform:translate(0,0); opacity:1;}
+}
+@-webkit-keyframes bannerTxt_arrow{
+	0% {  -webkit-transform:translate(0,80%); opacity:0;}
+ 	100% {  -webkit-transform:translate(0,0); opacity:1;}
+}
+@keyframes bannerTxt_arrow{
+	0% {  transform:translate(0,80%); opacity:0;}
+ 	100% {  transform:translate(0,0); opacity:1;}
+}
+
+.bannerTxt_person { left:23px; top:-221px; width:288px; height:292px; background:url(../img/bannerTxt_person.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .bannerTxt_person { -moz-animation:bannerTxt_person 0.6s ease 2s both; -webkit-animation:bannerTxt_person 0.6s ease 2s both; animation:bannerTxt_person 0.6s ease 2s both;}
+@-moz-keyframes bannerTxt_person{
+	0% {  -moz-transform:translate(-30%,0); opacity:0;}
+ 	100% {  -moz-transform:translate(0,0); opacity:1;}
+}
+@-webkit-keyframes bannerTxt_person{
+	0% {  -webkit-transform:translate(-30%,0); opacity:0;}
+ 	100% {  -webkit-transform:translate(0,0); opacity:1;}
+}
+@keyframes bannerTxt_person{
+	0% {  transform:translate(-30%,0); opacity:0;}
+ 	100% {  transform:translate(0,0); opacity:1;}
+}
+
+.bannerCloud { left:50%; bottom:0; width:1920px; height:147px; background:url(../img/bannerCloud.png) center 0 no-repeat; margin-left:-960px;}
+
+.wrap { height:1966px; background:url(../img/wrap.jpg) center 0 no-repeat; margin:106px 0 116px 0;}
+.qrCode_title { font-size:32px; font-weight:bold; line-height:73px;}
+.iTitle { width:100%; line-height:59px; font-size:38px;}
+.iTitle01 { top:884px;}
+.iTitle02 { top:1610px;}
+.guide { top:1021px; width:100%; font-size:0;}
+.guideItem { display:inline-block; font-size:20px; margin:0 27px;}
+.guideNum { display:inline-block; width:47px; height:47px; font-size:30px; font-style:normal; font-weight:bold; background-color:#a98857; border-radius:50%; margin:16px 0;}
+.guideTxt { display:inline-block; min-width:236px; line-height:45px; font-size:20px; background-color:#a98857; padding:0 30px; border-radius:22px;}
+
+.rule { top:1735px; width:100%;}
+.ruleUl { display:inline-block; width:1000px;}
+.ruleUl li { font-size:18px; text-align:left; color:#a98857; margin-bottom:10px;}
+.ruleUl li:after { display:block; height:0; content:''; clear:both; visibility:hidden;}
+.ruleUl i { display:block; width:24px; height:24px; line-height:24px; text-align:center; font-size:16px; font-style:normal; color:#fff; background-color:#a98857; border-radius:50%; margin-top:1px;}
+.ruleTxt { width:960px; margin-left:16px;}
+
+@-moz-keyframes fadeIn{
+	0% { opacity:0;}
+ 	100% { opacity:1;}
+}
+@-webkit-keyframes fadeIn{
+	0% { opacity:0;}
+ 	100% { opacity:1;}
+}
+@keyframes fadeIn{
+	0% { opacity:0;}
+ 	100% { opacity:1;}
+}

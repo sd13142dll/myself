@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>Toshiba</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/scale.js"></script>
+</head>
+
+
+<body>
+<!--loading start-->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two" style="left:20px;"></div>
+            <div class="object" id="object_three" style="left:40px;"></div>
+            <div class="object" id="object_four" style="left:60px;"></div>
+            <div class="object" id="object_five" style="left:80px;"></div>
+        </div>
+    </div> 
+</div>    
+<!--loading end-->
+
+<div class="guide">
+	<img class="guide_logo" src="images/logo.png">
+    <img class="guide_tmall" src="images/guide_tmall.png">
+    <div class="guide_content">
+        <img class="guide_star" src="images/guide_star.png">
+        <h2 class="guide_name">叶梓萱</h2>
+        <p class="guide_type">视频电话</p>
+    </div>
+    <section class="guide_btnWrap">
+    	<div class="tc">
+    		<a class="guide_btn guide_btnNo" href="index.html"><img class="guide_iconNo" src="images/guide_iconNo.png"></a>
+            <p class="guide_yn">拒绝</p>
+        </div>
+        
+        <div class="tc">
+    		<a class="guide_btn guide_btnYes" href="index.html"><img class="guide_iconYes" src="images/guide_iconYes.png"></a>
+            <p class="guide_yn">接听</p>
+        </div>
+    </section>
+</div>
+
+<audio loop src="video/iPhone.mp3" id="audio" preload="preload"></audio>
+
+<script src="js/orientationchange.js"></script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function(){
+	function audioPlay(id){
+		document.getElementById(id).play();
+	}
+	
+	audioPlay("audio");
+	
+	$('html').click(function(){
+		audioPlay("audio");
+	}).trigger("click");
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2016随手记财务年报</title>
+        <meta name="keywords" content="随手记,我的2016年度账单">
+        <meta name="description" content="我的2016年度账单">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <meta name="apple-touch-fullscreen" content="YES">
+        <meta name="full-screen" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="email=no">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/data.css" rel="stylesheet" type="text/css">
+        <script src="js/scale_wh.js" type="text/javascript"></script>
+    </head>
+    
+    <body>      
+    	<!--wechat share Start-->
+        <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+            <img src="images/section09_topImg01.jpg" class="wechat_share">
+        </div>
+        <!--wechat share End-->
+        
+        <!--loading Start-->
+        <div id="loading">
+        	<img src="images/bg.jpg" class="loading_bg">
+        	<img src="images/loading.gif" class="loading_img">
+            <div class="loading_txt">Loading......</div>
+        </div>
+        <!--loading End-->
+
+        <!--wechatPop Start-->
+        <div class="pop wechatPop">
+        	<img src="images/wechatPop.png" class="wechatPop_img">
+        </div>
+        <!--wechatPop End-->
+
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+                <!--section01 Start-->
+                <section class="swiper-slide section01">
+                	<div class="section01_wrap">
+                    	<img src="images/section01_img.png" width="100%">
+                        <div class="section01_paintGirl"></div>
+                        <div class="section01_girl"></div>
+                        <div class="section01_boy"></div>
+                    </div>
+                </section>
+                <!--section01 End-->  
+                
+                <!--section02 Start-->
+                <section class="swiper-slide section02">
+                    <div class="section02_column">
+                        <img src="images/section02_column.png" width="100%">
+                        <div class="section02_content">
+                            <h3>这是我记账的 <span class="red58 transDateNumber"></span> 天</h3>
+                            <p>我今年第一笔流水发生在</p>
+                            <p class="red38 firstTransDate"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="section02_ani">
+                        <img src="images/section02_ani.png" width="100%">
+                        <div class="section02_bookAni"></div>
+                        <img src="images/section02_person.png" class="section02_person">
+                    </div>
+                </section>
+                <!--section02 End-->    
+                
+                <!--section03 Start-->
+                <section class="swiper-slide section03">
+                    <div class="section03_column">
+                        <div class="section03_content">
+                            <img src="images/section03_column.png" width="100%">
+                            <div class="section03_leftTxt">
+                                <p class="section03_leftTitle"><span class="user-name"></span>我今年记了</p>
+                                <p><span class="red58 bookTotalCount"></span> 笔流水</p>
+                                <p class="section03_leftTitle">打败全国</p>
+                                <p><span class="red38 bookTransPercent"></span> 的小伙伴</p>
+                            </div>
+                            
+                            <div class="section03_rightTxt">
+                                <p><b>收入</b><span class="incomeTotalCount"></span>笔</p>
+                                <p><b>支出</b><span class="payTotalCount"></span>笔</p>
+                                <p><b>转账</b><span class="transferTotalCount"></span>笔</p>
+                                <p><b>其他</b><span class="otherTotalCount"></span>笔</p>
+                            </div>
+                        </div>
+                        
+                        <img src="images/section03_flower.png" class="section03_flower">
+                    </div>
+                    
+                    <div class="section03_bottom">
+                    	<img src="images/section03_ani.png" width="100%">
+                        <div class="section03_hand"></div>
+                    </div>
+                </section>
+                <!--section03 End-->  
+                
+                <!--section04 Start-->
+                <section class="swiper-slide section04">
+                    <div class="section04_top">
+                        <img src="images/section04_top.png" width="100%">
+                        <div class="section04_topTxt">
+                            <p>今年，</p>
+                            <p>我和<span class="red48 bookUsedNumber"></span>本账本发生了纯洁的金钱关系</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section04_mid">
+                        <img src="images/section04_mid01.png" class="mainAccountBookType">
+                        <div class="section04_midTxt">
+                            <p class="section04_midTitle"><span class="red38 mainAccountBookName"></span></p>
+                            <p>成为了我的<span class="bgColor_yellow">年度账单</span></p>
+                            <p class="section04_midTitle">支出 <span class="red38 totalPay"></span> <span class="currencyName-1"></span></p>
+                            <p>收入 <span class="red38 totalIncome"></span> <span class="currencyName-2"></span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="section04_bottom">
+                    	<div class="section04_bottomLeft">
+                        	<img src="images/section04_bottom.png" width="100%">
+                            <div class="section04_hand"></div>
+                        </div>
+                        
+                        <div class="section04_bottomTxt">
+                            <p>今年<span class="bgColor_yellow">我的支出</span></p>
+                            <p>比<span class="previouYear"></span>年</p>
+                            <p class="section04_bottomNum">
+                            	<span class="section04_bottomNum_num payIncreaseRate"></span><span class="currencyName-2"></span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--section04 End-->  
+                
+                <!--section05 Start-->
+                <section class="swiper-slide section05">
+                    <img src="images/section05_top.png" class="section05_top">
+                    <div class="section05_mid">
+                        <img src="images/section05_mid.png" width="100%">
+                        <div class="section05_tagLT"><i class="LT"></i></div>
+                        <div class="section05_tagRT"><i class="RT"></i></div>
+                        <div class="section05_tagLB"><i class="LB"></i></div>
+                        <div class="section05_tagRB"><i class="RB"></i></div>
+                        <div class="section05_midAni01"></div>
+                        <div class="section05_midAni02"></div>
+                        <div class="section05_midAni03"></div>
+                        <div class="section05_midAni04"></div>
+                    </div>
+                    
+                    <div id="recordContent">
+                        <canvas id="recordCvs">您的浏览器不支持Canvas！</canvas>
+                        <h3><span>年<br>支<br>出<br>趋<br>势</span><br>(<i class="currencyName-1"></i>)</h3>
+                        <div class="recordAverage"><img src="images/recordAverage.png">月平均支出<span></span></div>
+                    </div>
+                </section>
+                <!--section05 End-->  
+                
+                <!--section06 Start-->
+                <section class="swiper-slide section06">
+                    <div class="section06_top">
+                        <div class="section06_topTitle">
+                        	<span>支出排行</span>
+                            <span>TOP<i class="section06_topNum">4</i></span>
+                        </div>
+                        
+                        <div class="section06_topColumn">
+                            <div class="section06_topItem">
+                                <div class="circle">
+                                    <div class="circle_left"><div class="left"></div></div>
+                                    <div class="circle_right"><div class="right"></div></div>
+                                    <div class="circle_mask"><span class="TCP"></span>%</div>
+                                </div>
+                                <p class="TC"></p>
+                            </div>
+                            
+                            <div class="section06_topItem">
+                                <div class="circle">
+                                    <div class="circle_left"><div class="left"></div></div>
+                                    <div class="circle_right"><div class="right"></div></div>
+                                    <div class="circle_mask"><span class="TCP"></span>%</div>
+                                </div>
+    
+                                <p class="TC"></p>
+                            </div>
+                            
+                            <div class="section06_topItem">
+                                <div class="circle">
+                                    <div class="circle_left"><div class="left"></div></div>
+                                    <div class="circle_right"><div class="right"></div></div>
+                                    <div class="circle_mask"><span class="TCP"></span>%</div>
+                                </div>
+    
+                                <p class="TC"></p>
+                            </div>
+                            
+                            <div class="section06_topItem">
+                                <div class="circle">
+                                    <div class="circle_left"><div class="left"></div></div>
+                                    <div class="circle_right"><div class="right"></div></div>
+                                    <div class="circle_mask"><span class="TCP"></span>%</div>
+                                </div>
+    
+                                <P class="TC"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section06_cpiTitle">
+                    	<img src="images/section06_cpiTitle.png" width="100%">
+                        <div class="section06_cpiBanana"></div>
+                    </div>
+                    
+                    <!--比较section06_pillarNum01和section06_pillarNum02的数字那个大。如果2大于1，给section06_cpi添加section06_cpiWon；如果2小于1，添加section06_cpiLost-->
+                    <div class="section06_cpi">
+                        <div class="section06_cpiLeft">
+                            <div class="section06_cpiTop section06_cpiWonTop">
+                                <p>恭喜你~</p>
+                                <p>跑赢了！棒棒哒！</p>
+                            </div>
+                            <div class="section06_cpiTop section06_cpiLostTop">
+                                <p>未跑赢CPI，没关系！</p>
+                                <p>再接再厉哦！</p>
+                            </div>
+                            
+                            <div class="section06_chart">
+                                <div class="section06_pillar section06_pillarL">
+                                    <p class="section06_pillarNum section06_pillarNum01">1.8%</p>
+                                    <div class="section06_rectangle"></div>
+                                </div>
+                                
+                                <div class="section06_pillar section06_pillarR">
+                                    <p class="section06_pillarNum section06_pillarNum02"><span class="incomeIncreaseRate"></span>%</p>
+                                    <div class="section06_rectangle"></div>
+                                </div>
+
+                                <div class="section06_chartTxt section06_chartTxtL">CPI幅度</div>
+                                <div class="section06_chartTxt section06_chartTxtR">收入年增长率</div>
+                            </div>
+                        </div>
+                        
+                        <img src="images/section06_cpiWon.png" class="section06_rightImg section06_cpiWon_img">
+                        <img src="images/section06_cpiLost.png" class="section06_rightImg section06_cpiLost_img">
+                    </div>
+                </section>
+                <!--section06 End-->  
+                
+                <!--section07 Start-->
+                <section class="swiper-slide section07">
+                    <!--<div class="section07_top">
+                        <img src="images/section07_top.png" width="100%">
+                        <div class="section07_topContent">
+                            <div class="section07_topTitle">购买盈利360天产品的用户平均收益率为</div>
+                            <p class="section07_topNum">10,000</p>
+                            <div class="section07_topWrap">
+                                <i>例</i>
+                                <div>购买随手记稳盈理财产品--投入本金<span>100,000元365天，收益约10,000元</span></div>
+                            </div>
+                        </div>                 
+                    </div>-->
+                    <img src="images/section07_top.png" class="section07_top">
+                    <div class="section07_ani">
+                    	<img src="images/section07_ani.png" width="100%">
+                        <div class="section07_ani01"></div>
+                        <div class="section07_ani02"></div>
+                    </div>                
+                    
+                    <div class="section06_chart section07_chart">
+                        <div class="section06_pillar section06_pillarL">
+                            <p class="section06_pillarNum">100,000</p>
+                            <div class="section06_rectangle"></div>
+                        </div>
+                        
+                        <div class="section06_pillar section06_pillarR">
+                            <p class="section06_pillarNum">110,000</p>
+                            <div class="section06_rectangle"></div>
+                        </div>
+                        
+                        <div class="section06_chartTxt section06_chartTxtL">购买理财产品前</div>
+                        <div class="section06_chartTxt section06_chartTxtR">购买理财产品后</div>
+                    </div>
+                    
+                </section>
+                <!--section07 End-->  
+                
+                <!--section08 Start-->
+                <section class="swiper-slide section08">
+                    <img src="images/section08_top.png" class="section08_top">
+                    <div class="section08_title">
+                        <p class="section08_titleName"><b>净资产 (<i class="currencyName-1"></i>)</b><span>截止2016.12.31</span></p>
+                        <p class="section08_titleNum netAssert"></p>
+                    </div>
+                    
+                    <div class="section08_mid">                
+                        <p class="section08_midTxt01">资产负债率</p>
+                        <p class="section08_midTxt02"><span class="netAssertIncreaseRate"></span>%</p>
+                        <div class="section08_midWrap">
+                            <div class="section08_progress">
+                                <div class="section08_progressLine"></div>
+                            </div>
+                            <img src="images/section08_midImg01.png" class="section08_midImg01">
+                            <img src="images/section08_midImg02.png" class="section08_midImg02">
+                        </div>
+                        <div class="section08_midExp">
+                            <span>保守</span>
+                            <span>适中</span>
+                            <span>危险</span>
+                        </div>
+                    </div>
+                    
+                    <div class="section08_bottom">
+                        <img src="images/section08_bottom.png" width="100%">
+                        <img src="images/section08_armAni.png" class="section08_armAni">
+                        <div class="section08_handAni"></div>
+                        <div class="section08_bottomCT">
+                            <p class="section08_bottomNum assertDebtRate"></p>
+                            <p>对比<span class="previouYear"></span>年，净资产增长</p>
+                        </div>
+                    </div>
+                </section>
+                <!--section08 End-->  
+                
+                <!--section09 Start-->
+                <section class="swiper-slide section09">
+                	<!--section09_bookType3 控制星级的class，1代表1颗星，6代表6颗星-->
+                    <div class="section09_top">
+                    	<div class="section09_imgWrap">
+                            <img src="images/section09_topImg01.png" class="section09_topImg">
+                            <img src="images/section09_topImg02.png" class="section09_topImg">
+                            <img src="images/section09_topImg03.png" class="section09_topImg">
+                            <img src="images/section09_topImg04.png" class="section09_topImg">
+                            <img src="images/section09_topImg05.png" class="section09_topImg">
+                            <img src="images/section09_topImg06.png" class="section09_topImg">
+                            <div class="section09_topAni"></div>
+                        </div>
+                        
+                        <div class="section09_starWrap">
+                            <div class="section09_starList">
+                                <i class="section09_starIcon"></i>
+                                <i class="section09_starIcon"></i>
+                                <i class="section09_starIcon"></i>
+                                <i class="section09_starIcon"></i>
+                                <i class="section09_starIcon"></i>
+                                <i class="section09_starIcon"></i>
+                            </div>
+                            <p class="section09_starStatus">恭喜你! 晋级成<span>木制小账本</span><span>铜打流水账</span><span>铁筑老算盘</span><span>24K金手指</span><span>全能计算器</span><span>神级会计师</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="section09_bottomWrap">
+                        <img src="images/section09_bg.png" width="100%">
+                        <div class="section09_bottom">
+                            <img src="images/section09_bottom.png" width="100%">
+                            <a href="http://www.feidee.com/money/" onClick="ssj_zd2016.gaStatistics('click','有数据版-领取年报专属好礼');" class="section09_btn">领取年报专属好礼</a>
+                        </div>
+                    </div>
+                </section>
+                <!--section09 End--> 
+            </div>
+            
+            <!--arrow Start-->
+            <div class="arrow_wrap"><img id="arrow" src="images/arrow.png"></div>
+            <!--arrow End-->
+            
+            <!--share and music Start-->         
+            <div class="pendant">         
+                <a id="share" href="javascript:ssj_zd2016.shareToFriends();"><i></i><p>分享</p></a>
+                
+                <a class="music_on" id="music" href="javascript:;">	
+                    <i class="music_icon music_icon_on"></i>
+                    <i class="music_icon music_icon_off"></i>
+                    <audio loop src="music/music.mp3" id="media" preload="preload" autoplay="autoplay"></audio>
+                </a>
+            </div>
+            <!--share and music End-->
+        </div>
+        
+        <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="js/swiper.animate.min.js" type="text/javascript"></script>  
+        <script src="js/pace.js" type="text/javascript"></script>
+        <script src="js/countUp.js"></script>
+        <script src="js/zd2016.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+			var _gaq = _gaq || [];
+			window.onload = function() {
+				_gaq.push(['_setAccount', 'UA-251384-16']);
+				_gaq.push(['_trackPageview']);
+				(function() {
+					var ga = document.createElement('script');
+					ga.type = 'text/javascript';
+					ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(ga, s);
+				})();
+			}
+		</script>
+    </body>
+</html>

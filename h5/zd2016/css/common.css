@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+*,*:after,*:before { box-sizing:border-box;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,span,blockquote { padding:0;margin:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,canvas { display:block; }
+html,body{ height:100%;}
+html { font-size:50px;}
+body { position:relative; font:0.38rem/1.5 "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; color:#231f79; max-width:750px; margin:0 auto;}
+table { border-collapse:collapse; border-spacing:0;}
+img { display:block; border:none; vertical-align:top;}
+a { display:block; text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0); color:#231f79;}
+ul { list-style:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+input,select,label { vertical-align:middle; outline:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+/*swiper*/
+.swiper-container { width:100%; height:100%; position:relative; overflow:hidden; z-index:1; opacity:0; background:url(../images/bg.jpg) no-repeat; background-size:100% 100%;}
+.swiper-slide,#loading { display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center; -webkit-box-align:center; box-align:center; position:relative; width:100%; height:100%; overflow:hidden;}
+.swiper-pagination { right:5px;}
+.swiper-pagination .swiper-pagination-bullet { width:4px; height:4px; background-color:#cccccc; border:1px solid #cccccc; opacity:0.8;}
+.swiper-pagination .swiper-pagination-bullet-active { background-color:#ffffff; border:1px solid #ffffff; opacity:1;}
+
+/*loading*/
+#loading { position:absolute; z-index:999; left:0; top:0;}
+.loading_bg { position:absolute; z-index:1; left:0; top:0; width:100%; height:100%;}
+.loading_img,.loading_txt { position:relative; z-index:2;}
+.loading_img { width:2rem; margin-top:-1rem;}
+.loading_txt { font-weight:bold; margin:-0.3rem 0 0 -1rem;}
+
+/*pace*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace .pace-progress {
+  position:absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+.pace .pace-progress:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  content: attr(data-progress-text);
+}
+
+/*pop*/
+.pop { position:absolute; z-index:10; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); display:none;}
+.wechatPop_img { position:absolute; top:0; right:0.62rem; width:4.32rem; height:2.92rem;}

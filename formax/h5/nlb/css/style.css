@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+html { font-size:62.5%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,span,blockquote { padding:0;margin:0;}
+body { font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif; font-size:100%; line-height:1.5; background-color:#ffa13d; position:relative;}
+img { border:none; vertical-align:top;}
+a { text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul { list-style:none;}
+input,select,label { vertical-align:middle;outline:none;}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+.va_m { vertical-align:middle;}
+.width100 { width:100%;}
+.textCenter { text-align:center;}
+
+.nlb { font-size:1.4rem; position:relative; z-index:2;}
+.nlbMainBg { position:absolute; left:0; bottom:0; width:100%;}
+.nlbHeader { background-color:#d64400; position:relative;}
+.nlbBanner { position:relative;}
+.nlbBanner01 { position:absolute; left:13.90625%; top:11.72214182%; width:27.5%;}
+.nlbHeaderAni .nlbBanner01 { -moz-animation:nlbBanner01 0.6s ease 0.8s both; -webkit-animation:nlbBanner01 0.6s ease 0.8s both; animation:nlbBanner01 0.6s ease 0.8s both;}
+@-moz-keyframes nlbBanner01{	
+	0%{ -moz-transform:scale(0.2,0.2); opacity:0;}
+	25%{ -moz-transform:scale(1.06,1.06); opacity:0.85;}
+	40%{ -moz-transform:scale(0.98,0.98); opacity:0.9;}
+	55%{ -moz-transform:scale(1.04,1.04); opacity:0.95;}
+	70%{ -moz-transform:scale(0.99,0.99); opacity:1;}
+	85%{ -moz-transform:scale(1.01,1.01); opacity:1;}
+	100%{ -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes nlbBanner01{	
+	0%{ -webkit-transform:scale(0.2,0.2); opacity:0;}
+	25%{ -webkit-transform:scale(1.06,1.06); opacity:0.85;}
+	40%{ -webkit-transform:scale(0.98,0.98); opacity:0.9;}
+	55%{ -webkit-transform:scale(1.04,1.04); opacity:0.95;}
+	70%{ -webkit-transform:scale(0.99,0.99); opacity:1;}
+	85%{ -webkit-transform:scale(1.01,1.01); opacity:1;}
+	100%{ -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes nlbBanner01{	
+	0%{ transform:scale(0.2,0.2); opacity:0;}
+	25%{ transform:scale(1.06,1.06); opacity:0.85;}
+	40%{ transform:scale(0.98,0.98); opacity:0.9;}
+	55%{ transform:scale(1.04,1.04); opacity:0.95;}
+	70%{ transform:scale(0.99,0.99); opacity:1;}
+	85%{ transform:scale(1.01,1.01); opacity:1;}
+	100%{ transform:scale(1,1); opacity:1;}
+}
+
+.nlbBanner02 { position:absolute; left:0; top:21.70767004%; width:100%; opacity:0;}
+.nlbHeaderAni .nlbBanner02 { -moz-animation:nlbBanner02 0.8s linear 0.3s both; -webkit-animation:nlbBanner02 0.8s linear 0.3s both; animation:nlbBanner02 0.8s linear 0.3s both;}
+@-moz-keyframes nlbBanner02{	
+	0%{ opacity:0;}
+	100%{ opacity:1;}
+}
+@-webkit-keyframes nlbBanner02{	
+	0%{ opacity:0;}
+	100%{ opacity:1;}
+}
+@keyframes nlbBanner02{	
+	0%{ opacity:0;}
+	100%{ opacity:1;}
+}
+
+.nlbBannerPerson { position:absolute; left:9.375%; top:50.7959479%; width:35%;}
+.nlbHeaderAni .nlbBannerPerson { -moz-animation:nlbBannerPerson 0.8s ease-out 0s infinite; -webkit-animation:nlbBannerPerson 0.8s ease-out 0s infinite; animation:nlbBannerPerson 0.8s ease-out 0s infinite; -moz-transform-origin:50% 90%; -webkit-transform-origin:50% 90%; transform-origin:50% 90%;}
+@-moz-keyframes nlbBannerPerson {
+	0% { -moz-transform:skew(0,0);}
+	50% { -moz-transform:skew(-3deg,0);}
+	100% { -moz-transform:skew(0,0);}
+}
+@-webkit-keyframes nlbBannerPerson {
+	0% { -webkit-transform:skew(0,0);}
+	50% { -webkit-transform:skew(-3deg,0);}
+	100% { -webkit-transform:skew(0,0);}
+}
+@keyframes nlbBannerPerson {
+	0% { transform:skew(0,0);}
+	50% { transform:skew(-3deg,0);}
+	100% { transform:skew(0,0);}
+}
+
+.nlbBtnWrap { position:absolute; left:0; top:80%; width:100%; text-align:center;}
+.nlbBtn { display:inline-block; width:60%; height:4.7rem; line-height:4.7rem; text-align:center; font-size:2.1rem; border:3px solid #9c430d; border-radius:10px; color:#c33018; background:-moz-linear-gradient(top,#fce126,#efb915); background:-webkit-linear-gradient(top,#fce126,#efb915); background:linear-gradient(top,#fce126,#efb915);}
+.nlbArrowWrap { position:absolute; left:0; top:93%; width:100%; text-align:center;}
+.nlbBannerArrow { width:25px;}
+.nlbHeaderAni .nlbBannerArrow { -moz-animation:nlbBannerArrow 1.8s ease-in 0s infinite; -webkit-animation:nlbBannerArrow 1.8s ease-in 0s infinite; animation:nlbBannerArrow 1.8s ease-in 0s infinite;}
+@-moz-keyframes nlbBannerArrow {
+	0%,30% {opacity:0; -moz-transform:translate(0,-6px);}
+	60% {opacity:1; -moz-transform:translate(0,0);}
+	100% {opacity:0; -moz-transform:translate(0,8px);}
+}
+@-webkit-keyframes nlbBannerArrow {
+	0%,30% {opacity:0; -webkit-transform:translate(0,-6px);}
+	60% {opacity:1; -webkit-transform:translate(0,0);}
+	100% {opacity:0; -webkit-transform:translate(0,8px);}
+}
+@keyframes nlbBannerArrow {
+	0%,30% {opacity:0; transform:translate(0,-6px);}
+	60% {opacity:1; transform:translate(0,0);}
+	100% {opacity:0; transform:translate(0,8px);}
+}
+
+.nlbMain { color:#7f3611; padding:0 1rem 3rem 1rem;}
+.nlbMainTitle { text-align:center; font-size:1.8rem; font-weight:bold; padding:0.5rem 0 1.5rem 0;}
+.nlbMainTitleI { display:inline-block; width:42px; height:26px; background:url(../images/nlbMainTitleI.png) no-repeat; background-size:cover; margin-right:0.8rem; vertical-align:middle;}
+.nlbItem { display:table; margin-bottom:1rem;}
+.nlbItemCell { display:table-cell;}
+.nlbItemCellIcon { display:block; width:2rem; height:2rem; line-height:2rem; text-align:center; color:#ffa13d; background-color:#ed5a09; font-style:normal; border-radius:50%;}
+.nlbItemCellP { color:#442a15; margin-left:6px;}
+.nlbItemCellP a { color:#442a15; font-weight:bold;}
+
+.nlbTableWrap { position:relative; margin-bottom:0.6rem;}
+.nlbTableWrap2 { margin-bottom:1.5rem;}
+.nlbTableIcon { position:absolute; left:0; top:100%; width:13px; height:12px; background:url(../images/nlbTableIcon.png) no-repeat; background-size:cover;}
+.nlbTable { width:100%; background-color:#ffc76f; border-radius:15px 15px 15px 0; overflow:hidden;}
+.nlbTable td { width:25%; padding:8px 0; text-align:center; white-space:nowrap;}
+.nlbTableTr2 { background-color:#ffb747;}
+.nlbTable .first { width:16%;}
+.nlbTableW { font-size:1.2rem; color:#ffffff;}
+
+@media screen and (max-height:460px){
+	.nlbBanner { width:100%; height:100%;}
+	.nlbBanner img:first-child { position:absolute; left:0; top:0; width:100%; height:75%;}
+	.nlbBanner01 { top:6%;}
+	.nlbBanner02 { top:14%;}
+	.nlbBannerPerson { left:9.5%; top:37.6%; width:32%;}	
+	.nlbBtnWrap { top:78%;}
+	.nlbArrowWrap { top:94%;}
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>Toshiba</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/scale.js"></script>
+</head>
+
+
+<body>
+<!--loading start-->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two" style="left:20px;"></div>
+            <div class="object" id="object_three" style="left:40px;"></div>
+            <div class="object" id="object_four" style="left:60px;"></div>
+            <div class="object" id="object_five" style="left:80px;"></div>
+        </div>
+    </div> 
+</div>    
+<!--loading end-->
+
+<!--弹层 Start-->
+<div class="pop">
+	<div class="pop_content">
+    	<h2>人气合影排行榜参与互动：</h2>
+        <ul class="pop_list">
+        	<li>1、首页点击“与叶梓萱合影”按钮跳转参与合影互动。</li>
+            <li>2、选择个人照片及叶梓萱合影模板完成合影照。</li>
+            <li>3、点击“我要参与人气合影排行榜赢豪礼”按钮上传个人邮寄信息。</li>
+            <li>4、将个人合影照分享至个人朋友圈为自己拉票，人气排行榜前三名将获得豪华礼品。</li>
+        </ul>
+        <div class="pop_prizeWrap">
+        	<div class="pop_prize">
+            	<img src="images/pop_prizeImg01.png">
+                <p>第一名</p>
+                <p>Premium 2TB 移动硬盘</p>
+            </div>
+            
+            <div class="pop_prize">
+            	<img src="images/pop_prizeImg02.png">
+                <p>第二名</p>
+                <p>A2 2TB 移动硬盘</p>
+            </div>
+            
+            <div class="pop_prize">
+            	<img src="images/pop_prizeImg03.png">
+                <p>第三名</p>
+                <p>极至瞬速N302 32GB SD卡</p>
+            </div>
+        </div>
+        
+        <h2>微信大转盘抽奖规则：</h2>
+        <ul class="pop_list">
+        	<li>1、分享东芝存储双十一活动页面至朋友圈，撰写任意分享感受并截图。</li>
+            <li>2、关注“东芝存储”官方微信并将分享截图以及注明“东芝双11分享”字样发送至官微即可获得一次抽奖机会。</li>
+            <li>3、官微收到分享截图后，给予玩家参与抽奖的方式，成功参加获得礼品。</li>
+        </ul>
+        <div class="pop_prizeWrap">
+        	<div class="pop_prize">
+            	<img src="images/pop_prizeImg04.png">
+                <p>TransferJet<br>无线传输套装</p>
+            </div>
+            
+            <div class="pop_prize">
+            	<img src="images/pop_prizeImg05.png">
+                <p>全球通用电源转换器</p>
+            </div>
+            
+            <div class="pop_prize">
+            	<img src="images/pop_prizeImg06.png">
+                <p>SSD安装工具</p>
+            </div>
+            
+            <div class="pop_prize">
+            	<img src="images/pop_prizeImg07.png">
+                <p>乐扣乐扣杯</p>
+            </div>
+        </div>
+    </div>
+    
+    <a class="pop_close" href="javascript:;"></a>
+</div>
+<!--弹层 End-->
+
+<!--分享弹层 Start-->
+<div class="like_pop">
+	<img class="like_pop01" src="images/like_pop01.png">
+    <img class="like_pop02" src="images/like_pop02.png">
+    <a class="like_popClose" href="javascript:;"></a>
+</div>
+<!--分享弹层 End-->
+
+<div class="container">
+    <header class="header">
+        <img class="header_logo" src="images/logo.png">
+        <a class="header_btn" href="index.html">返回首页</a>
+    </header>
+    
+    <div class="main sharePhoto">
+    	<img class="groupPhoto_tmall" src="images/tmall_1111.png">
+        <img class="groupPhoto_title" src="images/groupPhoto_title.png">
+        <p class="sharePhoto_num">25号</p>
+        <img class="savePhoto_img" src="images/savePhoto_img.jpg">
+        <p class="sharePhoto_praise">20个赞</p>
+        <a class="btn sharePhoto_btn sharePhoto_like" href="javascript:;"><img src="images/sharePhoto_like.png"><span class="vm">我要分享</span></a> 
+        <div class="sharePhoto_btnWrap">
+        	<a class="btn sharePhoto_btn" href="javascript:;">我要参加</a> 
+            <a class="btn sharePhoto_btn rule_btn" href="javascript:;">活动规则</a> 
+            <a class="btn sharePhoto_btn" href="javascript:;">为他点赞</a> 
+        </div>       
+        <a class="btn sharePhoto_btn sharePhoto_ranking" href="topList.html">合影排行</a>  
+    </div>
+</div>
+
+<script src="js/orientationchange.js"></script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/common.js"></script>
+<script>
+(function(){
+	$(".sharePhoto_like").click(function(){
+		$(".like_pop").fadeIn(300);
+	});
+	
+	$(".like_popClose").click(function(){
+		$(".like_pop").fadeOut(300);
+	});
+})();
+</script>
+</body>
+</html>

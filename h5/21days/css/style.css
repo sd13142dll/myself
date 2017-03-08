@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+*,*:after,*:before { box-sizing:border-box;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,span,blockquote { padding:0;margin:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+html { font-size:50px;}
+body { font:0.26rem/1.5 "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif; position:relative; background-color:#ffc63b;}
+table { border-collapse:collapse; border-spacing:0;}
+img { display:block; border:none; vertical-align:top;}
+a { display:block; text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul { list-style:none;}
+input,select,label,textarea { vertical-align:middle; outline:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+.wp100 { width:100%;}
+.pr { position:relative;}
+.pa { position:absolute;}
+.vm { vertical-align:middle;}
+.tc { text-align:center;}
+.dib { display:inline-block;}
+
+/*loading Start*/
+#loading{background-color:#fff;height:100%;width:100%;position:fixed;z-index:999;margin-top:0;top:0}
+#loading-center{width:100%;height:100%;position:relative}
+#loading-center-absolute{position:absolute;left:50%;top:40%;height:10px;width:50px;margin-top:-10px;margin-left:-35px}
+.object{width:10px;height:10px;background-color:#333;-moz-border-radius:50% 50% 50% 50%;-webkit-border-radius:50% 50% 50% 50%;border-radius:50% 50% 50% 50%;margin-right:10px;margin-bottom:10px;position:absolute;opacity:.2;-webkit-opacity:.2}
+#object_one{-webkit-animation:object 2s linear infinite;animation:object 2s linear infinite}
+#object_two{-webkit-animation:object 2s linear infinite -.4s;animation:object 2s linear infinite -.4s}
+#object_three{-webkit-animation:object 2s linear infinite -.8s;animation:object 2s linear infinite -.8s}
+#object_four{-webkit-animation:object 2s linear infinite -1.2s;animation:object 2s linear infinite -1.2s}
+#object_five{-webkit-animation:object 2s linear infinite -1.6s;animation:object 2s linear infinite -1.6s}
+@-webkit-keyframes object{
+	0%{left:50px;top:0}
+	80%{left:0;top:0}
+	85%{left:0;top:-10px;width:10px;height:10px}
+	90%{width:20px;height:7.5px}
+	95%{left:25px;top:-10px;width:10px;height:10px}
+	100%{left:50px;top:0}
+}
+@keyframes object{
+	0%{left:50px;top:0}
+	80%{left:0;top:0}
+	85%{left:0;top:-10px;width:10px;height:10px}
+	90%{width:20px;height:7.5px}
+	95%{left:25px;top:-10px;width:10px;height:10px}
+	100%{left:50px;top:0}
+}
+/*loading End*/
+
+/*弹层 start*/
+.pop { position:fixed; z-index:100; left:0; top:0; width:100%; height:100%; color:#fff; background-color:rgba(0,0,0,0.75); display:none;}
+.popBox { display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-pack:center; box-pack:center; -webkit-box-align:center; box-align:center; width:100%; height:100%;}
+.awardPop_gril { width:18%;}
+.awardPop_main { position:relative; width:87%;}
+.awardPop_content { position:absolute; left:0; top:0; width:100%; height:100%; text-align:center; padding-top:3.5%;}
+.awardPop_h2 { font-size:0.4rem; color:#feca4b;}
+.awardPop_column01 { margin-top:3.5%;}
+.awardPop_column02 { margin-top:7%;}
+.awardPop_column03 { margin-top:8.5%;}
+.awardPop_p { font-size:0.32rem;}
+.awardPop_p span { color:#ffc63b;}
+.awardPop_img01,.awardPop_img02 { display:inline-block; margin-top:2%;}
+.awardPop_img01 { width:34.6%;}
+.awardPop_img02 { width:33.23124%;}
+.awardPop_column03 p { font-size:0.22rem; margin-bottom:1%;}
+.awardPop_column03 .yellow { color:#feca4b;}
+.pop_close { position:relative; display:block; width:0.7rem; height:0.7rem; border:1px solid #fff; border-radius:50%; margin-top:5%;}
+.pop_close::before,.pop_close::after { content:""; position:absolute; top:0.11rem; left:50%; width:0.02rem; height:0.44rem; background-color:#fff;}
+.pop_close::before { -webkit-transform:translateX(-50%) rotate(-45deg); transform:translateX(-50%) rotate(-45deg);}
+.pop_close::after { -webkit-transform:translateX(-50%) rotate(45deg); transform:translateX(-50%) rotate(45deg);}
+.pop_close_hover { background-color:#fff;}
+.pop_close_hover::before,.pop_close_hover::after { background-color:#000;}
+.sharePop_img { position:absolute; top:0.4rem; right:0.8rem; width:60%;}
+.pop_tipsImg { position:absolute; top:0; right:0.62rem; width:4.32rem; height:2.92rem;}
+/*弹层 end*/
+
+.container { padding-bottom:0.5rem;}
+.banner { height:10.06rem; background:url(../img/banner_bg.png) no-repeat; background-size:100%;}
+.down_btnWrap { position:absolute; top:8.96rem;}
+.down_btnWrapL { right:3.1rem;}
+.down_btnWrapR { right:0.18rem;}
+.down_btnWrap p { text-align:center; line-height:1.8; color:#163c90;}
+.down_btn { height:0.88rem; line-height:0.84rem; background:url(../img/down_btn.png) no-repeat; background-size:100% 100%; text-align:center; font-size:0.34rem; color:#fff;}
+.down_btnNo { width:2.36rem;}
+.down_btnYes { width:2.76rem;}
+.share_btn,.award_btn { position:absolute; right:0.12rem; text-align:center; font-size:0.33rem; color:#fff;}
+.share_btn { top:0.27rem; width:1.45rem; height:0.65rem; line-height:0.6rem; background:url(../img/share_btn.png) no-repeat; background-size:100% 100%;}
+.award_btn { top:1.26rem; width:1.5rem; height:0.66rem; line-height:0.61rem; background:url(../img/award_btn.png) no-repeat; background-size:100% 100%;}
+
+.main { padding:0 0.46rem 0 0.46rem; margin-top:-0.1rem;}
+.column { border-bottom:1px solid #d0aa4a; padding:0.3rem 0;}
+.column:last-of-type { border-bottom:none;}
+.column h2 { font-size:0.33rem; font-weight:normal; color:#163881; padding-bottom:0.1rem;}
+.column ul li { list-style:decimal outside; margin-left:0.3rem; line-height:1.8; color:#163983;}
+
+.bottom { text-align:center; line-height:1.8; margin-top:0.5rem;}
+.bottom_contact { color:#53350b;}
+.copyright { font-size:0.19rem; color:#7f5c19; margin-top:0.4rem;}
+
+/*media*/
+@media all and (max-width:320px) and (max-height:450px){
+	.awardPop_gril { width:15%;}
+	.awardPop_main { width:80%;}
+	.awardPop_column02 { margin-top:5%;}
+	.awardPop_column03 { margin-top:5%;}
+}
+
+@media all and (min-width:321px) and (max-height:500px){
+	.awardPop_gril { width:15%;}
+	.awardPop_main { width:80%;}
+	.awardPop_column02 { margin-top:5%;}
+	.awardPop_column03 { margin-top:5%;}
+}

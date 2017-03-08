@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+html { font-size:62.5%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,span,blockquote { padding:0;margin:0;}
+body { font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif; font-size:100%; line-height:1.5;}
+img { border:none; vertical-align:top;}
+a { text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul { list-style:none;}
+input,select,label { vertical-align:middle;outline:none;}
+.clear { clear:both;}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+.va_m { vertical-align:middle;}
+.width100 { width:100%;}
+.textCenter { text-align:center;}
+.mt10 { margin-top:10px;}
+.mt20 { margin-top:20px;}
+
+.fun { font-size:1.4rem;}
+.funBanner { position:relative;}
+.funBannerP { position:absolute; bottom:0; left:50%; width:32.1875%; margin-left:-16.09375%;}
+.funBannerPper { position:absolute; bottom:0; left:5%; width:90%;}
+.funAni .funBannerPper { -moz-animation:funBannerPper 0.21s linear infinite; -webkit-animation:funBannerPper 0.21s linear infinite; animation:funBannerPper 0.21s linear infinite; -moz-transform-origin:50% 95%; -webkit-transform-origin:50% 95%; transform-origin:50% 95%;}
+@-moz-keyframes funBannerPper{
+	0%{ -moz-transform:scale(0.96,1);}
+ 	12%{ -moz-transform:scale(0.96,1.01);}
+	50%{ -moz-transform:scale(0.96,1);}
+ 	88%{ -moz-transform:scale(0.96,0.99);}
+	100%{ -moz-transform:scale(0.96,1);}
+}
+@-webkit-keyframes funBannerPper{
+	0%{ -webkit-transform:scale(0.96,1);}
+ 	12%{ -webkit-transform:scale(0.96,1.01);}
+	50%{ -webkit-transform:scale(0.96,1);}
+ 	88%{ -webkit-transform:scale(0.96,0.99);}
+	100%{ -webkit-transform:scale(0.96,1);}
+}
+@keyframes funBannerPper{
+	0%{ transform:scale(0.96,1);}
+ 	12%{ transform:scale(0.96,1.01);}
+	50%{ transform:scale(0.96,1);}
+ 	88%{ transform:scale(0.96,0.99);}
+	100%{ transform:scale(0.96,1);}
+}
+
+.funBannerD { position:absolute; top:0; right:1.9%; display:block; width:48px; height:55px; line-height:19px; text-align:center; font-style:italic; color:#FFFFFF; background-color:#6c3316; border-radius:0 0 50% 50%; padding-top:3px; opacity:0;}
+.funBannerAni .funBannerD { -moz-animation:funBannerD 0.4s linear both; -webkit-animation:funBannerD 0.4s linear both; animation:funBannerD 0.4s linear both;}
+@-moz-keyframes funBannerD{
+	0%{ -moz-transform:translate(0,-55px); opacity:0;}
+	100%{ -moz-transform:translate(0,0); opacity:1;}
+}
+@-webkit-keyframes funBannerD{
+	0%{ -webkit-transform:translate(0,-55px); opacity:0;}
+	100%{ -webkit-transform:translate(0,0); opacity:1;}
+}
+@keyframes funBannerD{
+	0%{ transform:translate(0,-55px); opacity:0;}
+	100%{ transform:translate(0,0); opacity:1;}
+}
+.funBannerD_span { position:relative; top:-5px; font-style:normal; font-size:1.4rem;}
+.funBannerAni .funBannerD_span { -moz-animation:funBannerD 1.2s linear 1s infinite; -webkit-animation:funBannerD 1.2s linear 1s infinite; animation:funBannerD 1.2s linear 1s infinite;}
+@-moz-keyframes funBannerD_span{
+	0%{ opacity:0;}
+	100%{ opacity:1;}
+}
+@-webkit-keyframes funBannerD_span{
+	0%{ opacity:0;}
+	100%{ opacity:1;}
+}
+@keyframes funBannerD_span{
+	0%{ opacity:0;}
+	100%{ opacity:1;}
+}
+
+body .funBtn { display:block; width:80%; height:4.2rem; line-height:4.2rem; margin:0.3rem auto 0 auto; text-align:center; font-size:2.2rem; font-weight:bold; color:#FFFFFF; background-color:#f8490a; border-radius:25px; box-shadow:0 4px #b93100;}
+body .funBtn:hover { color:#FFFFFF; background-color:#de3b00;}
+.funNote { color:#333333; text-align:center; margin-top:0.8rem;}
+.funTitle { color:#f80a0a; font-size:2rem; text-align:center; margin-top:3rem;}
+.funGray { color:#919191; text-align:center; padding:0 0.9rem;}
+
+.funWhyTop { height:5px; background:url(../images/funWhyTop.png) repeat-x; margin-top:25px;}
+.funWhy { background-color:#ffe8c7; padding:25% 0;}
+.funWhyBall { width:66.875%; margin:0 auto; position:relative;}
+.funWhyLight { position:absolute; left:0; top:0; width:100%; height:100%;}
+.funAni .funWhyLight { -moz-animation:funWhyLight 1.6s linear 0s infinite; -webkit-animation:funWhyLight 1.6s linear 0s infinite; animation:funWhyLight 1.6s linear 0s infinite;}
+@-moz-keyframes funWhyLight{
+	0%{ -moz-transform:scale(0.7,0.7); opacity:0;}
+	50%{ -moz-transform:scale(0.85,0.85); opacity:1;}
+	100%{ -moz-transform:scale(1,1); opacity:0;}
+}
+@-webkit-keyframes funWhyLight{
+	0%{ -webkit-transform:scale(0.7,0.7); opacity:0;}
+	50%{ -webkit-transform:scale(0.85,0.85); opacity:1;}
+	100%{ -webkit-transform:scale(1,1); opacity:0;}
+}
+@keyframes funWhyLight{
+	0%{ transform:scale(0.7,0.7); opacity:0;}
+	50%{ transform:scale(0.85,0.85); opacity:1;}
+	100%{ transform:scale(1,1); opacity:0;}
+}
+
+.funWhyBubble01,
+.funWhyBubble02,
+.funWhyBubble03,
+.funWhyBubble04 
+{ position:absolute; opacity:0;}
+.funWhyBubble01 { position:absolute; left:-21.36448598%; top:-15.18691589%; width:44.62616822%;}
+.funWhyBubble02 { position:absolute; right:-12.55140187%; top:-23.36448598%; width:43.22429907%;}
+.funWhyBubble03 { position:absolute; left:-19.85981308%; bottom:-8.64485981%; width:38.08411215%;}
+.funWhyBubble04 { position:absolute; right:-7.00934579%; bottom:-19.39252336%; width:38.55140187%;}
+.funWhyBallAni .funWhyBubble01 { -webkit-animation:funWhyBubble 0.7s linear 0s forwards;}
+.funWhyBallAni .funWhyBubble02 { -webkit-animation:funWhyBubble 0.7s linear 0.6s forwards;}
+.funWhyBallAni .funWhyBubble03 { -webkit-animation:funWhyBubble 0.7s linear 0.9s forwards;}
+.funWhyBallAni .funWhyBubble04 { -webkit-animation:funWhyBubble 0.7s linear 0.3s forwards;}
+@-moz-keyframes funWhyBubble{
+	0%{ -moz-transform:scale(0,0); opacity:0;}
+	100%{ -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes funWhyBubble{
+	0%{ -webkit-transform:scale(0,0); opacity:0;}
+	100%{ -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes funWhyBubble{
+	0%{ transform:scale(0,0); opacity:0;}
+	100%{ transform:scale(1,1); opacity:1;}
+}
+
+.funXzTop { height:5px; background:url(../images/funXzTop.png) repeat-x; margin-top:-9px;}
+.funXz { background-color:#f9be26; padding:10% 0;}
+.funXzBottom { text-align:center; margin-top:15px;}
+.funXzImg { display:inline-block; width:20%; vertical-align:middle; position:relative;}
+.funXzStar01 { position:absolute; right:-11.71875%; top:15.03759398%; width:22.65625%;}
+.funXzStar02 { position:absolute; right:-31.25%; top:-4.88721805%; width:22.65625%; -webkit-transform:rotate(-20deg) scale(0.8,0.8);}
+.funAni .funXzStar01 { -webkit-animation:funXzStar01 1s linear 0s infinite;}
+.funAni .funXzStar02 { -webkit-animation:funXzStar02 1s linear 0s infinite;}
+@-moz-keyframes funXzStar01{
+	0%{ -moz-transform:scale(0.93,0.93); opacity:0.4;}
+	50%{ -moz-transform:scale(1,1); opacity:1;}
+	100%{ -moz-transform:scale(0.93,0.93); opacity:0.4;}
+}
+@-webkit-keyframes funXzStar01{
+	0%{ -webkit-transform:scale(0.93,0.93); opacity:0.4;}
+	50%{ -webkit-transform:scale(1,1); opacity:1;}
+	100%{ -webkit-transform:scale(0.93,0.93); opacity:0.4;}
+}
+@keyframes funXzStar01{
+	0%{ transform:scale(0.93,0.93); opacity:0.4;}
+	50%{ transform:scale(1,1); opacity:1;}
+	100%{ transform:scale(0.93,0.93); opacity:0.4;}
+}
+
+@-moz-keyframes funXzStar02{
+	0%{ -moz-transform:rotate(-20deg) scale(0.8,0.8); opacity:1;}
+	50%{ -moz-transform:rotate(-20deg) scale(0.73,0.73); opacity:0.4;}
+	100%{ -moz-transform:rotate(-20deg) scale(0.8,0.8); opacity:1;}
+}
+@-webkit-keyframes funXzStar02{
+	0%{ -webkit-transform:rotate(-20deg) scale(0.8,0.8); opacity:1;}
+	50%{ -webkit-transform:rotate(-20deg) scale(0.73,0.73); opacity:0.4;}
+	100%{ -webkit-transform:rotate(-20deg) scale(0.8,0.8); opacity:1;}
+}
+@keyframes funXzStar02{
+	0%{ transform:rotate(-20deg) scale(0.8,0.8); opacity:1;}
+	50%{ transform:rotate(-20deg) scale(0.73,0.73); opacity:0.4;}
+	100%{ transform:rotate(-20deg) scale(0.8,0.8); opacity:1;}
+}
+
+.funXzText { display:inline-block; color:#FFFFFF; font-size:1.2rem; text-align:left; line-height:2.5rem; margin-left:4%; vertical-align:middle;}
+
+.funBox { position:fixed; left:0; top:0; z-index:999; width:100%; height:100%; display:none;}
+.funBoxBlack { position:fixed; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6); box-sizing:border-box; padding:1rem;}
+.funBoxWrap { width:100%; height:100%; background-color:#FFFFFF; position:relative; box-sizing:border-box; padding:0 0 5.3rem 0;}
+.funBoxMain { width:100%; height:100%; color:#333333; font-size:1.4rem; background-color:#FFFFFF; border-radius:7px;  box-sizing:border-box; padding:1rem; overflow-y:auto;}
+.funBoxMain p { margin-top:0.6rem;}
+.funBoxGray { color:#666666;}
+.funBoxUl li { color:#e21111; list-style:disc inside;}
+.funBoxNote { color:#999999;}
+.funBoxBtn { position:absolute; left:0; bottom:0.7rem; width:100%;}
+
+@media screen and (min-width:360px){
+	.funXzText { font-size:1.4rem;}
+}
+.zz{ position:relative}
+.zzs{ position:absolute; top:0; bottom:0; width:100%; background: url(../images/zz.png); color:#fff; font-size:2rem; text-align:center;}
+.zzs div{ vertical-align:middle; margin-top:80px; width:100%}

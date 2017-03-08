@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2016随手记财务年报</title>
+        <meta name="keywords" content="随手记, 2016年度账单, 分享页">
+        <meta name="description" content="2016年度账单分享页">
+        <base href=".">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-touch-fullscreen" content="YES">
+        <meta name="full-screen" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="email=no">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/data.css" rel="stylesheet" type="text/css">
+        <style>
+			html,body { height:auto;}
+			.sharePage { display:-webkit-box; display:box; -webkit-box-orient:vertical; box-orient:vertical; -webkit-box-align:center; box-align:center; background:url(images/bg.jpg) repeat-y; background-size:100% auto; padding-bottom:1rem;}
+			.sharePage .section02_column { margin-top:0.65rem;}
+			.sharePage .section02_content h3 { line-height:1.3; margin:5% 0 4% 0;}
+			.sharePage .section03_column { margin-top:0.46rem;}
+			.sharePage .section02_column .user-name,
+			.sharePage .section03_column .user-name,
+			.sharePage .section09_starStatus .user-name{
+				 display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; vertical-align:bottom;
+			}
+			.sharePage .section02_column .user-name { max-width:2.7rem;}
+			.sharePage .section03_column .user-name { max-width:1.98rem;}
+			.sharePage .section09_starStatus .user-name { max-width:3rem;}
+			.sharePage .section09_top { margin-top:0.6rem;}
+			.sharePage .section09_starWrap { margin-top:0;}
+			.guide_btn { position:relative; width:4.57rem; margin:0.6rem 0 0 0.05rem;}
+			.guide_btnTxt { position:absolute; left:0; top:0; width:98.9%; height:96.33%; font-weight:bold;}
+			.guide_prompt { width:4.02rem; margin:0.16rem 0 0 -0.4rem;}
+			.firstTransDate, .bookTransPercent, .bookUsedNumber { opacity:1;}
+			.pop { position:fixed;}
+			#loading { position:fixed;}
+		</style>
+        <script src="js/scale.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+    	<!--wechat share Start-->
+        <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+            <img src="images/wechat_share.png" class="wechat_share">
+        </div>
+        <!--wechat share End-->
+        
+    	<!--wechatPop Start-->
+        <div class="pop wechatPop">
+        	<img src="images/wechatPop.png" class="wechatPop_img">
+        </div>
+        <!--wechatPop End-->
+        
+        <!--loading Start-->
+        <div id="loading">
+        	<img src="images/bg.jpg" class="loading_bg">
+        	<img src="images/loading.gif" class="loading_img">
+            <div class="loading_txt">Loading......</div>
+        </div>
+        <!--loading End-->
+        
+    	<div class="sharePage">
+        	<div class="section02_column">
+                <img src="images/section02_column02.png" width="100%">
+                <div class="section02_content">
+                    <h3>这是<span class="user-name"></span>记账的 <br><span class="red58 transDateNumber countUp"></span> 天</h3>
+                    <p>今年第一笔流水发生在</p>
+                    <p class="red38 firstTransDate"></p>
+                </div>
+            </div>
+            
+            <img src="images/shareImg01.png" class="section02_ani">
+            
+            <div class="section03_column">
+                <div class="section03_content">
+                    <img src="images/section03_column.png" width="100%">
+                    <div class="section03_leftTxt">
+                        <p class="section03_leftTitle"><span class="user-name"></span>记了</p>
+                        <p><span class="red58 bookTotalCount countUp"></span> 笔流水</p>
+                        <p class="section03_leftTitle">打败全国</p>
+                        <p><span class="red38 bookTransPercent"></span>的小伙伴</p>
+                    </div>
+                    
+                    <div class="section03_rightTxt">
+                        <p><b>收入</b><span class="incomeTotalCount"></span>笔</p>
+                        <p><b>支出</b><span class="payTotalCount"></span>笔</p>
+                        <p><b>转账</b><span class="transferTotalCount"></span>笔</p>
+                        <p><b>其他</b><span class="otherTotalCount"></span>笔</p>
+                    </div>
+                </div>
+                
+                <img src="images/section03_flower.png" class="section03_flower">
+            </div>
+            
+            <!--section09_bookType3 控制星级的class，1代表1颗星，6代表6颗星-->
+            <div class="section09_top section_ani">
+                <div class="section09_imgWrap">
+                    <img src="images/section09_topImg01.png" class="section09_topImg">
+                    <img src="images/section09_topImg02.png" class="section09_topImg">
+                    <img src="images/section09_topImg03.png" class="section09_topImg">
+                    <img src="images/section09_topImg04.png" class="section09_topImg">
+                    <img src="images/section09_topImg05.png" class="section09_topImg">
+                    <img src="images/section09_topImg06.png" class="section09_topImg">
+                    <div class="section09_topAni"></div>
+                </div>
+                
+                <div class="section09_starWrap">
+                    <div class="section09_starList">
+                        <i class="section09_starIcon"></i>
+                        <i class="section09_starIcon"></i>
+                        <i class="section09_starIcon"></i>
+                        <i class="section09_starIcon"></i>
+                        <i class="section09_starIcon"></i>
+                        <i class="section09_starIcon"></i>
+                    </div>
+                    <p class="section09_starStatus">恭喜<b class="user-name"></b>晋级成<span>木制小账本</span><span>铜打流水账</span><span>铁筑老算盘</span><span>24K金手指</span><span>全能计算器</span><span>神级会计师</span></p>
+                </div>
+            </div>
+            
+            <a href="javascript: ssj_zd2016_share.my2016Bill();" class="guide_btn">
+            	<img src="images/guide_btn.png" width="100%">
+                <p class="swiper-slide guide_btnTxt" >查看我的财务年报</p>
+            </a>
+            
+            <img src="images/guide_prompt.png" class="guide_prompt">
+        </div>
+        
+        <script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pace.js" type="text/javascript"></script>    
+        <script src="js/zd2016-share.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var _gaq = _gaq || [];
+            window.onload = function() {
+                _gaq.push(['_setAccount', 'UA-251384-16']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(ga, s);
+                })();
+            }
+        </script>
+    </body>
+</html>
