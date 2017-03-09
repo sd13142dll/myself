@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body { line-height:1.5;-webkit-font-smoothing:antialiased; overflow-x:hidden; position:relative;}
+.tl { text-align:left;}
+.tr { text-align:right;}
+.tc { text-align:center;}
+.fl { float:left;}
+.fr { float:right;}
+.pr { position:relative;}
+.pa { position:absolute;}
+.vm { vertical-align:middle;}
+.vt { vertical-align:top;}
+.db { display:block;}
+.dib { display:inline-block;}
+.pl50 { padding-left:50px;}
+.whp100 { width:100%; height:100%;}
+
+.wrap { background:url(../img/wrap.png) center 0 no-repeat; overflow:hidden;}
+.main { width:980px; margin:0 auto;}
+.column01 { height:880px; background:url(../img/column01.png) center 0 no-repeat;}
+.banner { height:478px;}
+.banner_txt { left:50%; top:0; width:1061px; height:454px; margin-left:-522px; background:url(../img/banner_txt.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .banner_txt { -moz-animation:banner_txt 0.9s ease 0.6s both; -webkit-animation:banner_txt 0.9s ease 0.6s both; animation:banner_txt 0.9s ease 0.6s both;}
+@-moz-keyframes banner_txt{
+	0% { -moz-transform:translate(0,-130px); opacity:0;}
+	100% { -moz-transform:translate(0,0); opacity:1;}
+}
+@-webkit-keyframes banner_txt{
+	0% { -webkit-transform:translate(0,-130px); opacity:0;}
+	100% { -webkit-transform:translate(0,0); opacity:1;}
+}
+@keyframes banner_txt{
+	0% { transform:translate(0,-130px); opacity:0;}
+	100% { transform:translate(0,0); opacity:1;}
+}
+
+.banner_dl { left:0; top:0; width:100%; height:100%;}
+.banner_dl01 { left:83px; top:135px; width:90px; height:116px; background:url(../img/banner_dl01.png) no-repeat; opacity:0; opacity:1\9;}
+.banner_dl02 { left:844px; top:103px; width:117px; height:219px; background:url(../img/banner_dl02.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .banner_dl01 { -moz-animation:banner_dl 4s linear 1.9s infinite backwards; -moz-transform-origin:68% 0%; -webkit-animation:banner_dl 4s linear 1.9s infinite backwards; -webkit-transform-origin:68% 0%; animation:banner_dl 4s linear 1.9s infinite backwards; transform-origin:68% 0%;}
+.bannerAni .banner_dl02 { -moz-animation:banner_dl 4s linear 2.1s infinite backwards; -moz-transform-origin:25% 0%; -webkit-animation:banner_dl 4s linear 2.1s infinite backwards; -webkit-transform-origin:25% 0%; animation:banner_dl 4s linear 2.1s infinite backwards; transform-origin:25% 0%;}
+@-moz-keyframes banner_dl{
+	0% { -moz-transform:rotate(0deg); opacity:1;}
+	25% { -moz-transform:rotate(-6deg); opacity:1;}
+	50% { -moz-transform:rotate(0deg); opacity:1;}
+	75% { -moz-transform:rotate(6deg); opacity:1;}
+	100% { -moz-transform:rotate(0deg); opacity:1;}
+}
+@-webkit-keyframes banner_dl{
+	0% { -webkit-transform:rotate(0deg); opacity:1;}
+	25% { -webkit-transform:rotate(-6deg); opacity:1;}
+	50% { -webkit-transform:rotate(0deg); opacity:1;}
+	75% { -webkit-transform:rotate(6deg); opacity:1;}
+	100% { -webkit-transform:rotate(0deg); opacity:1;}
+}
+@keyframes banner_dl{
+	0% { transform:rotate(0deg); opacity:1;}
+	25% { transform:rotate(-6deg); opacity:1;}
+	50% { transform:rotate(0deg); opacity:1;}
+	75% { transform:rotate(6deg); opacity:1;}
+	100% { transform:rotate(0deg); opacity:1;}
+}
+
+.banner_fu { left:683px; top:279px; width:265px; height:248px; background:url(../img/banner_fu.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .banner_fu { -moz-animation:banner_fu 0.6s ease 0.1s both; -moz-transform-origin:46.4% 100%; -webkit-animation:banner_fu 0.6s ease 0.1s both; -webkit-transform-origin:46.4% 100%; animation:banner_fu 0.6s ease 0.1s both; transform-origin:46.4% 100%;}
+@-moz-keyframes banner_fu{
+	0% { -moz-transform:rotateY(720deg); opacity:1;}
+	100% { -moz-transform:rotateY(0deg); opacity:1;}
+}
+@-webkit-keyframes banner_fu{
+	0% { -webkit-transform:rotateY(720deg); opacity:1;}
+	100% { -webkit-transform:rotateY(0deg); opacity:1;}
+}
+@keyframes banner_fu{
+	0% { transform:rotateY(540deg); opacity:1;}
+	100% { transform:rotateY(0deg); opacity:1;}
+}
+
+.banner_cd { left:50%; top:0; width:1920px; height:698px; margin-left:-960px; background:url(../img/banner_cd.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerAni .banner_cd { -moz-animation:banner_cd 0.5s ease 1.4s both; -moz-transform-origin:50% 20%; -webkit-animation:banner_cd 0.5s ease 1.4s both; -webkit-transform-origin:50% 20%; animation:banner_cd 0.5s ease 1.4s both; transform-origin:50% 20%;}
+@-moz-keyframes banner_cd{
+	0% { -moz-transform:scale(0.1,0.1); opacity:0;}
+	100% { -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes banner_cd{
+	0% { -webkit-transform:scale(0.1,0.1); opacity:0;}
+	100% { -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes banner_cd{
+	0% { transform:scale(0.1,0.1); opacity:0;}
+	100% { transform:scale(1,1); opacity:1;}
+}
+
+.set { padding:0 17px;}
+.setTitle { color:#ffcf86; padding-left:20px;}
+.setTitleB { position:relative; font-size:30px; font-weight:bold; color:#ffcf86; text-shadow:2px 0px 0px #6e0c19,0px 2px 0px #6e0c19,-2px 0px 0px #6e0c19,0px -2px 0px #6e0c19; margin-right:10px;}
+.setContent { height:280px; padding-left:280px; background-color:#540d15; border:3px solid #540d15; border-radius:10px; margin-top:10px;}
+.setSnow { right:-13px; top:-16px; width:101px; height:35px; background:url(../img/setSnow.png) no-repeat;}
+.qrCode { left:0; top:0; border-radius:7px;}
+.setTable { width:100%; border-radius:7px; overflow:hidden;}
+.setTable th,.setTable td { height:39px; font-size:16px; color:#ffcf86; text-align:center; border:1px solid #73111d;}
+.setTable th { background-color:#ad2435; text-shadow:2px 0px 0px #6e0c19,0px 2px 0px #6e0c19,-2px 0px 0px #6e0c19,0px -2px 0px #6e0c19;}
+.setTable td { background-color:#911726;}
+.ruleWrap { padding-top:14px; background:url(../img/ruleWrap.png) center 0 no-repeat;}
+.rule { padding:70px 0 90px 0; background:url(../img/rule.png) repeat;}
+.ruleTitle .setTitleB { font-size:36px;}
+.ruleUl { margin-top:25px;}
+.ruleUl li { font-size:16px; color:#ffffff; margin-bottom:10px;}
+.ruleUl li:after { display:block; height:0; content:''; clear:both; visibility:hidden;}
+.ruleUl i { display:block; width:16px; height:16px; line-height:15px; text-align:center; font-size:12px; font-style:normal; color:#ffcf86; background-color:#e4382f; border-radius:50%; margin-top:5px;}
+.ruleTxt { width:784px; margin-left:15px;}
+.ruleRote { color:#6e040e; margin-top:15px;}
