@@ -1,0 +1,743 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>Formax</title>
+<link href="../css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+<body>
+<!--注册框-->
+<div class="doTaskBox" style="position:absolute; z-index:999; top:40px; left:10px; display:none;">
+	<div class="doTaskBoxTop"><a href="javascript:void(0);" class="doTaskBox_close"></a>注册金融圈</div>
+    
+    <div class="doTaskBox_conent">
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">手机号码：</span><input type="text" class="doTaskBox_input doTaskBox_inputE" placeholder="请输入手机号码"></p>
+            <p class="doTaskBox_error">手机号码格式错误</p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">密码：</span><input type="password" class="doTaskBox_input" placeholder="请设置密码"></p>
+            <p class="doTaskBox_error">密码需为6-16位，同时包含数字与字母。</p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column">
+            	<span class="doTaskBox_name">验证码：</span>
+                <input type="text" class="doTaskBox_input doTaskBox_input02">
+                <a href="javascript:void(0);" class="doTaskBox_code">获取手机验证码</a>
+                <a href="javascript:void(0);" class="doTaskBox_code doTaskBox_again" style="display:none;">验证码已发送</a>
+            </p>
+            <p class="doTaskBox_error">验证码填写有误</p>
+        </div>
+        
+        <div class="doTaskBox_item">
+        	<span class="doTaskBox_name">&nbsp;</span><label class="doTaskBox_label"><input type="checkbox" class="doTaskBox_checkbox">我接受</label><a href="#" target="_blank" class="doTaskBox_link">金融圈网站服务协议</a>
+        </div>
+    </div>
+    
+    <div class="doTaskBox_bottom">
+    	<a href="#" target="_blank" class="taskBtn">立即注册</a><a href="#" class="c_666666 ml20">直接登录</a>
+    </div>
+</div>
+
+<!--登录框-->
+<div class="doTaskBox" style="position:absolute; z-index:999; top:450px; left:10px; display:none;">
+	<div class="doTaskBoxTop"><a href="javascript:void(0);" class="doTaskBox_close"></a>登录金融圈</div>
+    
+    <div class="doTaskBox_conent">
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">手机号码：</span><input type="text" class="doTaskBox_input doTaskBox_inputE" placeholder="请输入手机号码"></p>
+            <p class="doTaskBox_error">手机号码格式错误</p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">密码：</span><input type="password" class="doTaskBox_input" placeholder="请输入密码"></p>
+            <p class="doTaskBox_error">密码错误，请重新输入！</p>
+        </div>
+                
+        <div class="doTaskBox_item">
+             <p class="clearfix pl74"><a href="#" class="c_666666 float_l">忘记登录密码？</a><a href="#" class="c_666666 float_r">免费注册</a></p>
+        </div>
+    </div>
+    
+    <div class="doTaskBox_bottom">
+    	<a href="#" target="_blank" class="taskBtn">立即登录</a>
+    </div>
+</div>
+
+<!--查看我的邀请-->
+<div class="doTaskBox" style="position:absolute; z-index:999; top:40px; left:500px; display:none;">
+	<div class="doTaskBoxTop"><a href="javascript:void(0);" class="doTaskBox_close"></a>查看我的邀请</div>   
+    <div class="doTaskBox_conent">
+    	<div class="doTaskBox_conentLR">
+            <p>欢迎您，136****3201用户，您已成功邀请<span style="color:#ff0000;">6</span>人</p>
+            <table class="doTaskBox_table mt15">
+            	<tr>
+                	<th>邀请日期</th>
+                    <th>好友手机号</th>
+                </tr>
+            </table>
+            
+            <div class="doTaskBox_scroll">
+                <table class="doTaskBox_table">
+                    <tr>
+                        <td>2015年8月8日</td>
+                        <td>1362803201</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2015年8月8日</td>
+                        <td>1362803201</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2015年8月8日</td>
+                        <td>1362803201</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2015年8月8日</td>
+                        <td>1362803201</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2015年8月8日</td>
+                        <td>1362803201</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2015年8月8日</td>
+                        <td>1362803201</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="doTaskBox_bottom">
+    	<div class="shareContent">
+            <span class="shareTitle">立即邀请：</span>
+            <a href="javascript:;" class="shareIcon shareIcon_wechat" title=""></a>
+            <a href="javascript:;" class="shareIcon shareIcon_qqzone" title="">
+            	<div class="inviteQr inviteQr2">
+                    <i class="inviteQrArrow"></i>
+                    <div class="inviteQrContent">
+                        <p>扫二维码分享至朋友圈</p>
+                        <img src="images/inviteQrCode.png" width="140" height="140">
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;" class="shareIcon shareIcon_weibo" title=""></a>
+            <a href="javascript:;" class="shareIcon shareIcon_qq" title=""></a>
+        </div>
+    </div>
+</div>
+
+<!--邀请好友-->
+<!--<div class="doTaskBox doTaskBox02" style="position:absolute; z-index:999; top:220px; left:1000px;">
+	<div class="doTaskBoxTop"><a href="javascript:void(0);" class="doTaskBox_close"></a>邀请好友</div>   
+    <div class="doTaskBox_conent">
+    	<div class="shareContent pl30">
+        	<div>
+                <span class="shareTitle shareTitle02">方式二：复制链接发送给好友 </span>
+                <input type="text" class="shareInput" value="www.jrq.comwww.jrq.comwww.jrq.com" readonly disabled>
+                <a href="javascript:;" class="shareBtn ml7">复制</a>
+        	</div>
+            
+        	<div class="mt20">
+                <span class="shareTitle shareTitle02">方式二：立即邀请：</span>
+                <a href="javascript:;" class="shareIcon shareIcon_wechat" title=""></a>
+                <a href="javascript:;" class="shareIcon shareIcon_qqzone" title="">
+                	<div class="inviteQr inviteQr2">
+                        <i class="inviteQrArrow"></i>
+                        <div class="inviteQrContent">
+                            <p>扫二维码分享至朋友圈</p>
+                            <img src="images/inviteQrCode.png" width="140" height="140">
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="shareIcon shareIcon_weibo" title=""></a>
+                <a href="javascript:;" class="shareIcon shareIcon_qq" title=""></a>
+            </div>
+        </div>
+    </div>    
+</div>-->
+
+<!--奖品申请-->
+<div class="doTaskBox" style="position:absolute; z-index:999; top:600px; left:500px; display:none;">
+	<div class="doTaskBoxTop"><a href="javascript:void(0);" class="doTaskBox_close"></a>奖品申请</div>
+    
+    <div class="doTaskBox_conent2">
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">姓名：</span><input type="text" class="doTaskBox_input doTaskBox_inputE" placeholder=""></p>
+            <p class="doTaskBox_error">请填写姓名</p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">联系电话：</span><input type="text" class="doTaskBox_input" placeholder=""></p>
+            <p class="doTaskBox_error"></p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">联系邮箱：</span><input type="text" class="doTaskBox_input" placeholder=""></p>
+            <p class="doTaskBox_error"></p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column"><span class="doTaskBox_name">身份证：</span><input type="text" class="doTaskBox_input" placeholder=""></p>
+            <p class="doTaskBox_error"></p>
+        </div>
+        
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column">
+            	<span class="doTaskBox_name">礼品：</span>
+                <select class="doTaskBox_select">
+                	<option>京东卡</option>
+                </select>
+            </p>
+            <p class="doTaskBox_error"></p>
+        </div>
+		
+        <div class="doTaskBox_item">
+            <p class="doTaskBox_column">
+            	<span class="doTaskBox_name">邮寄地址：</span>
+                <select class="doTaskBox_select doTaskBox_selectS">
+                	<option>广东省</option>
+                </select>
+                <select class="doTaskBox_select doTaskBox_selectS ml6">
+                	<option>深圳市</option>
+                </select>
+            </p>
+            <div class="clearfix pl74 mt10"><input type="text" class="doTaskBox_input" placeholder=""></div>
+            <p class="doTaskBox_error">对不起，该地址不在服务范围内！</p>
+        </div>
+    </div>
+    
+    <div class="doTaskBox_bottom">
+    	<a href="#" target="_blank" class="taskBtn">确认提交</a>
+    </div>
+</div>
+
+<!--侧定位导航-->
+<div class="pendant">
+	<a href="#inviteJl" class="pendantA pendantA01">活动奖励</a>
+    <a href="#inviteBd" class="pendantA pendantA02">达人榜单</a>
+    <a href="#inviteTz" class="pendantA pendantA03">投资港美股</a>
+    <a href="#inviteRule" class="pendantA pendantA04">活动规则</a>
+    <a href="#top" class="backTop">TOP</a>
+</div>
+
+
+<div class="mainLayout">
+	<header>
+        <div class="header headerTopic">
+            <div class="headerTop headerTopTopic">
+                <div class="headerTop_main">
+                    <a href="http://forbag.jrq.com/" target="_blank" class="headerTop_phone logoTopic"></a>
+                    <ul class="headerTop_ul">
+                                            <li><a href="http://www.jrq.com/download" target="_blank"><em class="header_em headerTop_phoneIcon"></em>手机客户端</a></li>
+                        <li>
+                                                    <a style="cursor:pointer;" class="btn_register"><em class="header_em headerTop_regIcon"></em>注册</a>
+                            <a style="cursor:pointer;" class="marLeft10 btn_login"><em class="header_em headerTop_loginIcon"></em>登录</a>
+                                                </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+    
+    <div class="prompt"><i class="promptIcon"></i><span>近期有部分用户利用虚假信息等不良手段参与此活动，主办方正在核实中，一经发现将取消该部分用户的奖励资格。谢谢配合！</span></div>
+    
+    <section>
+ 		<div class="invite">
+        	<!--Banner-->
+        	<div class="inviteBanner">
+            	<div class="bannerBlack">
+                	<div class="bannerBlack_text"></div>
+                    <div class="bannerBlackIcon01"></div>
+                    <div class="bannerBlackIcon02"></div>
+                    <div class="bannerBlackIcon03"></div>
+                </div>
+                
+                <div class="bannerIphone"></div>
+            	<div class="bannerHand"></div>
+                <div class="bannerFloor"></div>
+            	<div class="inviteShare">
+                    <p class="inviteShareP">将活动分享给好友</p>
+                    <div class="inviteShare_column">
+                        <a href="javascript:;" title="" class="inviteShareIcon inviteShareIcon01">
+                        	<div class="inviteQr">
+                            	<i class="inviteQrArrow"></i>
+                                <div class="inviteQrContent">
+                                	<p>扫二维码分享至朋友圈</p>
+                                    <img src="images/inviteQrCode.png" width="140" height="140">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:;" title="点击分享" class="inviteShareIcon inviteShareIcon02"></a>
+                        <a href="javascript:;" title="点击分享" class="inviteShareIcon inviteShareIcon03"></a>
+                        <a href="javascript:;" title="点击分享" class="inviteShareIcon inviteShareIcon04"></a>
+                    </div>
+                </div>
+            
+            	<div class="inviteBk">
+                	<div class="inviteBkBottom ta_c"><a href="#" target="_blank" class="inviteA ml25">查看我的邀请</a></div>
+                	<div class="inviteBkN">
+                    	<!--邀请 Start-->
+                    	<div style="display:none;">
+                            <p class="inviteBk_title">邀请好友成功开通港美股交易账户，前5名邀请成功数量最多的推荐人可获得Iphone6S，前100名内均有大奖！</p>
+                            <div class="mt20">
+                                <a href="#" target="_blank" class="inviteBtn" style="display:none;">马上去邀请</a>
+                                <span class="inviteBtn inviteBtn_gray">活动结束</span>   
+                            </div>
+                            <p class="font22 mt20">距离活动结束还有 <span class="inviteYellow">56</span> 天 <span class="inviteYellow">8</span> 小时 <span class="inviteYellow">37</span> 分</p>
+                        </div>
+                        <!--邀请 End-->
+                        
+                        <!--分享 Start-->
+                        <div>
+                        	<div class="mt35 font18">
+                            	<span class="va_m">您的邀请链接：</span>
+                                <input type="text" readonly class="inviteFxInput va_m" value="www.jrq.comwww.jrq.comwww.jrq.com">
+                                <a href="javascript:;" class="inviteFxBtn va_m">一键复制</a>
+                            </div>
+                            <div class="font0 mt20 ml20">
+                                <div class="inviteFxItem">
+                                	<a href="javascript:;" class="shareIcon shareIcon_wechat" title=""></a>
+                                    <p class="inviteFxP">QQ群/好友<span>(强烈推荐)</span></p>
+                                </div>
+                                <div class="inviteFxItem">
+                                    <a href="javascript:;" class="shareIcon shareIcon_qqzone" title="">
+                                        <div class="inviteQr inviteQr3">
+                                            <i class="inviteQrArrow"></i>
+                                            <div class="inviteQrContent">
+                                                <p>扫二维码分享至朋友圈</p>
+                                                <img src="images/inviteQrCode.png" width="140" height="140">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="inviteFxP">朋友圈/好友<span>(推荐)</span></p>
+                                </div>
+                                <div class="inviteFxItem">
+                                    <a href="javascript:;" class="shareIcon shareIcon_weibo" title=""></a>
+                                    <p class="inviteFxP">QQ空间</p>
+                                </div>
+                                <div class="inviteFxItem">
+                                    <a href="javascript:;" class="shareIcon shareIcon_qq" title=""></a>
+                                    <p class="inviteFxP">发布微博</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--分享 End-->
+                    </div>
+                </div>
+            </div>
+            <!--end--Banner-->
+            
+            <!--活动奖励-->
+            <div id="inviteJl" class="inviteDeep pt45">
+            	<i class="inviteArrow inviteArrowL"></i>
+                <div class="inviteMain">
+                	<i class="inviteBall inviteBall_first inviteBall01"></i>
+                    <h2 class="inviteTitle pt30">邀请人奖励</h2>
+                    <p class="inviteJlt"><i class="inviteRball">1</i><span class="va_m ml7">额外免佣奖励</span></p>
+                    <div class="mt15"><img src="images/inviteMyjl.png" width="909" height="196"></div>
+                    <p class="inviteJlt"><i class="inviteRball">2</i><span class="va_m ml7">实物奖励<b class="inviteJlt_b">（活动结束时，位于达人榜单排名前100名内的邀请人可获得以下对应奖品）</b></span></p>
+                    <div class="mt15"><img src="images/inviteSwjl.png" width="910" height="297"></div>
+                    <div class="mt50 ta_c"><a href="#" target="_blank" class="inviteBtn">马上去邀请</a></div>
+                    <div class="inviteDashed mt40"></div>
+                    
+                    <h2 class="inviteTitle pt35">被邀请人奖励</h2>
+                    <div class="mt15"><img src="images/inviteByqr.png" width="912" height="271"></div>
+                    
+                    <!--
+                    <div class="inviteDashed mt40"></div>
+                    
+                    <h2 class="inviteTitle pt35">一起来抽Apple Watch！</h2>
+                    <div class="clearfix">
+                        <div class="inviteCj">
+                            <div class="font18 mt10">
+                                <p>参与对象</p>
+                                <p>邀请人：每周成功邀请一名好友开户，当周内可刮奖1次。</p>
+                                <p>被邀请人：作为好友被邀请并开户成功，当周可刮奖1次。</p>
+                            </div>
+                            
+                            <div class="inviteCjk" style=" display:inline-block; vertical-align:top;">
+                                <h2 class="inviteCjk_title">您还没有刮卡抽奖机会</h2>
+                                <div class="inviteCanvas">
+                                    <img src="images/inviteCanvas.png" height="98">
+                                    <div class="inviteCanvas_posTxt"><p class="inviteCanvas_p">邀请好友立即获取刮卡抽奖资格得AppleWatch</p></div>
+                                </div>
+                                <div class="inviteCjk_bottom"><a href="#" target="_blank" class="inviteBtn inviteBtnS mt2">马上去邀请</a></div>
+                            </div>
+                            
+                            <div class="inviteCjk" style=" display:inline-block;">
+                                <h2 class="inviteCjk_title">刮奖赢取Apple Watch</h2>
+                                <div id="inviteCanvas" class="inviteCanvas inviteCanvas2">
+                                
+                                    <div class="inviteCanvas_text" style="display:none;">谢谢您！</div>
+                                    
+                                    <div class="inviteCanvas_table">
+                                        <div class="inviteCanvas_cell">
+                                            <div><i class="inviteSmaile"></i></div>
+                                            <p>恭喜！获得Apple Watch</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img id="redux" src="images/inviteCanvas2.png" height="159">
+                                    <i class="inviteCjk_hand"></i>
+                                </div>
+                            </div>     
+                                                  
+                        </div>
+                        
+                        <div class="inviteXYZ">
+                            <div class="ta_c mt15"><span class="inviteXYZ_title">幸运者</span></div>
+                            <div class="inviteXYZ_line"></div>
+                            <div class="inviteXYZ_k">
+                                <ul class="inviteXYZ_list">
+                                    <li>
+                                        <div class="inviteXYZ_front">幸运者</div>
+                                        <div class="inviteXYZ_after">136****3201</div>
+                                    </li>
+                                    <li>
+                                        <div class="inviteXYZ_front">幸运者</div>
+                                        <div class="inviteXYZ_after">136****3201</div>
+                                    </li>
+                                    <li>
+                                        <div class="inviteXYZ_front">幸运者</div>
+                                        <div class="inviteXYZ_after">136****3201</div>
+                                    </li>
+                                    <li>
+                                        <div class="inviteXYZ_front">幸运者</div>
+                                        <div class="inviteXYZ_after">136****3201</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                 
+                    -->
+                    
+                    
+                </div>
+            </div>
+            <!--end--活动奖励-->
+            
+            <!--夺奖攻略-->
+            <!--<div id="inviteGl" class="inviteLight">
+            	<i class="inviteArrow inviteArrowD"></i>
+                <div class="inviteMain pt45">
+                	<i class="inviteBall inviteBall02"></i>
+                    <h2 class="inviteTitle pt30">邀请人参与流程</h2>
+                    <div class="mt15"><img src="images/inviteNr_img01.png" width="912" height="133"></div>
+                    <div class="inviteDashed mt40"></div>
+                    <h2 class="inviteTitle pt30">被邀请人参与流程</h2>
+                    <div class="mt15"><img src="images/inviteNr_img02.png" width="912" height="133"></div>
+                </div>
+            </div>   --> 
+            <!--end--夺奖攻略-->
+            
+            <!--牛人榜单-->
+            <div id="inviteBd" class="inviteLight">
+            	<i class="inviteArrow inviteArrowD"></i>
+                <div class="inviteMain pt45">
+                	<i class="inviteBall inviteBall02"></i>
+                    <div class="inviteDeepWp">
+                        <table class="inviteDeepTable">
+                            <thead>
+                                <tr>
+                                    <th width="128">排名</th>
+                                    <th width="256">手机号码</th>
+                                    <th width="256">邀请人数</th>
+                                    <th width="256">邀请成功</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        
+                        <div class="inviteDeepScroll">
+                        	<table class="inviteDeepTable">
+                                <tbody>
+                                    <tr>
+                                        <td width="128">1</td>
+                                        <td width="256">13632803201</td>
+                                        <td width="256">36</td>
+                                        <td width="256">36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td width="128">1</td>
+                                        <td width="256">13632803201</td>
+                                        <td width="256">36</td>
+                                        <td width="256">36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>13632803201</td>
+                                        <td>36</td>
+                                        <td>36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="ta_c mt30"><a href="#" class="inviteNrA">我要申请奖品</a></div>
+                    
+                </div>
+            </div>    
+            <!--end--牛人榜单-->
+            
+            <!--投资港美股-->
+            <div id="inviteTz" class="inviteDeep">
+            	<i class="inviteArrow inviteArrowL"></i>
+                <div class="inviteMain pt45">
+                	<i class="inviteBall inviteBall03"></i>
+                    <div class="inviteTz"><a class="inviteTzA" href="#" target="_blank">查看更多></a></div>
+                </div>
+            </div>
+            <!--end--投资港美股-->    
+            
+            <!--活动规则-->
+            <div id="inviteRule" class="inviteLight">
+            	<i class="inviteArrow inviteArrowD"></i>
+                <div class="inviteMain pt45">
+                	<i class="inviteBall inviteBall04"></i>
+					<ul class="inviteDetail">
+                    	<li>
+                        	<i class="inviteDetail_icon">1</i>
+                            <span class="inviteDetail_span">活动时间：2015年9月15日至2015年11月15日。</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">2</i>
+                            <span class="inviteDetail_span">被邀请人须成功开通港美股账户，才算邀请成功。邀请人须邀请成功不低于5人才有获取实物奖励资格，第1-5名获奖者须邀请不少于20人。</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">3</i>
+                            <span class="inviteDetail_span">单个用户在金融圈获得的免佣奖励累计不能超过10年。</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">4</i>
+                            <span class="inviteDetail_span">在活动结束时如果出现邀请成功人数并列的情况，则以用时最短的邀请人为首，其余依次往下排序。（举例：有3个邀请人在活动结束时同样邀请成功34人，则最快完成34人的邀请者为第1名，其他两名邀请者依次是第2名、第3名。）</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">5</i>
+                            <span class="inviteDetail_span">所有实物奖励在活动结束后1个月内安排寄送（Iphone 6S需预定，以到货时间起算），用户需填写“奖品寄送申请表”，提交收货地址。活动结束后7天内不提交此表，则视为放弃奖品。</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">6</i>
+                            <span class="inviteDetail_span">本活动中所指的”免佣“或”零佣“均指客户在免佣期内产生的港股”交易佣金“免征收，其他各类待收税、费仍需缴纳。</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">7</i>
+                            <span class="inviteDetail_span">任何通过不法手段使用虚假信息参与活动的用户，一经发现，将取消奖励资格。</span>
+                        </li>
+                        
+                        <li>
+                        	<i class="inviteDetail_icon">8</i>
+                            <span class="inviteDetail_span">本活动最终解释权归Formax福亿所有。如有疑问，请咨询400-0948-887。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+            <!--end--活动规则-->
+            
+        </div>
+    </section>    
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-links"><p><span>友情链接：</span><a target="_blank" href="http://www.formaxmarket.com">Formax 福亿</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.fuyicaifu.com/">福亿财富</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.formaxprime.com/">Formax Prime</a>&nbsp;|&nbsp;<a target="_blank" href="http://www.formax-group.com/">Formax Group</a></p><!--p 隐私条款 | 风险提示 | 联系我们--></div>
+            <div class="footer-copyright"><p>金融圈 版权所有   粤ICP备14057196号     Copyright &copy; 2014 jrq.com. All rights reserved</p><p>客服热线：400-0948-887<span class="norm">|</span>客服邮箱：support@jrq.com</p></div>
+            <div class="cert"><a target="_blank" href="http://www.cfca.com.cn"><img src="http://www.cfca.com.cn/image/logo_110.png"></a>&nbsp;<a target="_blank" href="http://webscan.360.cn/index/checkwebsite?url=www.jrq.com"><img src="http://www.xingtouzi.com/static/img/360safety.jpg"></a></div>
+        </div>
+    </footer>
+</div>
+</body>
+
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<!--<![if !IE]>
+<script src='js/jquery.eraser.js' type='text/javascript'></script>
+<script>
+addEventListener("load", init, false );
+function init( event ) {
+	$("#redux").eraser();
+}
+</script>
+<![endif]>-->
+
+<script>
+$(window).load(function(){
+	$(".inviteBanner").addClass("inviteBannerAni");
+	var oDiv = document.getElementById("redux"); 
+	var canvasWp=document.getElementById("inviteCanvas");
+	/*if (!oDiv.getContext) { 
+		var disL=disT=0;
+		
+		oDiv.onmousedown=function(ev){
+			var oEvent=ev||event;
+			disL=oEvent.clientX-oDiv.offsetLeft;
+			
+			document.onmousemove=function(ev){
+				var oEvent=ev||event;
+				var posL=oEvent.clientX-disL;				
+				if(posL<=0){
+					posL=0;
+				}
+				oDiv.style.left=posL+"px";
+				if(oDiv.offsetLeft>=30){
+					$("#redux").animate({left:oDiv.offsetWidth},300);
+					document.onmousemove=null;
+				}
+			}			
+			document.onmouseup=function(){
+				document.onmousemove=null;
+				document.onmouseup=null;  //释放无用事件
+				oDiv.releaseCapture && oDiv.releaseCapture();  //释放事件捕获
+			}					
+			this.setCapture && this.setCapture();  //事件捕获，防止拖拽中选中文字				
+			return false;  //老版火狐bug
+		}
+	} */
+	
+	var $pendant=$(".pendant");	
+	var winH=$(window).height();
+	var mainTop=$("#inviteJl").offset().top;
+	var pendantTop=parseInt($pendant.css("top")); 
+
+	if($(window).width()<1280){
+			$pendant.css("display","none");
+	}else{
+		$(window).scroll(function(){				
+			var scrollTop=$(this).scrollTop();
+			
+			if(scrollTop>mainTop-pendantTop){
+				$pendant.fadeIn(200);
+			}else{
+				$pendant.fadeOut(200);	
+			}
+		});
+	}
+		
+});
+</script>
+</html>

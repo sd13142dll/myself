@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,span,blockquote { padding:0;margin:0;}
+body { font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif; font-size:14px;}
+img { border:none;}
+a { text-decoration:none;}
+ul { list-style:none;}
+input,select,label { vertical-align:middle;outline:none;} <!---去掉谷歌input默认边框outline:none;--->
+.clear { clear:both;}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+
+.font14 { font-size:14px;}
+
+/*百度+迅雷活动*/
+.bx { background:url(../images/baixun_bg.jpg) center 0 no-repeat #0e79d1; padding-top:600px; color:#FFFFFF;}
+.bxMain { width:974px; margin:0 auto;}
+.bxTitle { font-size:27px; font-weight:normal;}
+.bxTitle em { display:inline-block; width:15px; height:28px; background:url(../img/baixun.png) 0 -444px no-repeat; margin-right:7px; vertical-align:middle;}
+.bxDetail { font-size:18px; background-color:#02a2ec; border:1px solid #54c7f9; margin-top:94px; margin-bottom:45px;}
+.bxColumn { width:972px; height:148px; background:url(../img/baixun.png) no-repeat;}
+.bxColumn01 { background-position:0 -521px; margin-top:-74px; position:relative;}
+.bxColumn02 { background-position:0 0; margin-top:30px; position:relative;}
+.bxColumn03 { background-position:0 -148px;}
+.bxColumn04 { background-position:0 -296px;}
+.bxRegister { display:block; width:339px; height:77px; background:url(../img/baixun.png) -94px -444px no-repeat; position:absolute; right:74px; top:37px;}
+.bxRegister:hover { background-position:-446px -444px;}
+.bxQRcode { position:absolute; right:82px; bottom:35px; width:157px; height:157px;}
+.bxQRcode img { width:157px; height:157px;}
+.bxQRcode_em { position:absolute; top:0; left:-24px; width:24px; height:44px; background:url(../img/baixun.png) -25px -444px no-repeat;}
+.bxDetail_text { padding:40px;}
+.bxDetail_text p { margin-bottom:6px;}
+.bx_yellow { font-size:20px; color:#f7d9a0;}
+.bxTable { width:100%; padding:35px 0;}
+.bxTable th { font-size:20px; background-color:#0a8ac5;}
+.bxTable th,.bxTable td { padding:10px 0; text-align:center;}
+.bxTable .even { background-color:#22b4f7;}
+.bxDetail_ul li { margin-bottom:20px;}
+.bxDetail_ul li em { display:inline-block; width:7px; height:7px; background:url(../img/baixun.png) -63px -444px no-repeat; margin-right:10px; vertical-align:middle;}
+.bxDetail_a { display:inline-block; padding:6px 30px; font-weight:bold; color:#FFFFFF; background-color:#047cdc; border-radius:20px;}
+.bxDetail_a:hover { color:#fbc868;}
+.bxBottom { font-size:14px; padding:25px 0 60px 25px;}
+.bxBottom p { margin-bottom:8px;}
+.bxBottom_ul li { margin-bottom:8px;}
+.bxBottom_ul a { color:#FFFFFF; text-decoration:underline;}
+.bxBottom_ul a:hover { color:#fbc868;}
+
+/*10万理财基金*/
+.ten { background:url(../img/ten_bg.jpg) 0 bottom no-repeat; background-color:#d4291d; color:#000; line-height:38px; padding-bottom:50px;}
+.ten_banner { width:100%; height:656px; background:url(../img/ten_banner.jpg) center 0 no-repeat;}
+.ten_logo { width:949px; margin:0 auto; padding:50px 0 0 15px;}
+.ten_logo a { display:block; width:374px; height:65px; background:url(../img/ten.png) 0 0 no-repeat;}
+.tenMain { width:964px; margin:0 auto;}
+.tenItem { margin:55px 0 0 0; background-color:#FFFFFF; border-radius:10px; position:relative; box-shadow:1px 1px 8px #333333;}
+.tenIcon { display:block; position:absolute; top:-18px; left:-12px; width:243px; height:162px; background:url(../img/ten.png) no-repeat;}
+.tenIcon01 { background-position:0 -75px;}
+.tenIcon02 { background-position:-248px -75px;}
+.tenImg { text-align:center; padding:45px 0;}
+.tenRed { color:#d4291d; font-weight:bold;}
+.tenRule { font-size:18px; color:#3e3a39; padding:116px 70px 80px 70px;}
+.tenRule_column { margin-bottom:20px;}
+.tenRule_h2 { font-size:18px; line-height:normal;}
+.tenRule_ul { list-style:disc; padding:5px 0 0 20px;}
+.tenRule_a { color:#d4291d; font-weight:bold;}
+.tenRule_a:hover { text-decoration:underline;}
+
+/*最安全的理财体验*/
+.safeBody { background:url(../img/topic_safe_bg.gif) center 0 no-repeat;}
+.safe { width:100%; min-height:1100px; padding:510px 0 350px 0; background:url(../img/topic_safe_bottom.gif) center bottom no-repeat; font-size:16px; color:#424343;}
+.safe_main { width:1000px; margin:0 auto;}
+.safeTitle { width:100%; text-align:center; border-top:1px solid #ccdbec;}
+.safeTitle_span { display:inline-block; height:38px; background:url(../img/topic_safe.png) no-repeat; background-color:#FFFFFF; padding:0 20px; margin-top:-19px;}
+.safeTitle_span01 { background-position:20px 0; width:288px;}
+.safeTitle_span02 { background-position:20px -43px; width:238px;}
+.safeTitle_span03 { background-position:20px -86px; width:238px;}
+.safeTitle_span04 { background-position:20px -129px; width:158px;}
+.safeContent { margin:30px 0 110px 0;}
+.safe_title { color:#499cf8; font-size:20px; font-weight:bold;}
+.safe_em { display:inline-block; width:30px; height:37px; background:url(../img/topic_safe.png) no-repeat; margin-right:5px; vertical-align:middle;}
+.safe_em01 { background-position:0 -196px;}
+.safe_em02 { background-position:-35px -196px;}
+.safe_em03 { background-position:-69px -196px;}
+.safe_p { padding:0 0 0 42px; line-height:30px; margin:5px 0 40px 0;}
+.safeContent02 { text-align:center;  margin:40px 0 110px 0;}
+.safeItem { display:inline-block; width:286px; vertical-align:top;}
+.safeItem_mid { margin:0 30px;}
+.safeItem_span { display:inline-block; width:163px; height:163px; background:url(../img/topic_safe.png) no-repeat; margin-bottom:35px;}
+.safeItem_span01 { background-position:0 -247px;}
+.safeItem_span02 { background-position:-168px -247px;}
+.safeItem_span03 { background-position:-336px -247px;}
+.safeItem_title { color:#499cf8; font-size:24px; margin-bottom:13px;}
+.safeItem_text { text-align:left; line-height:33px;}
+.safeContent_partner { margin:40px 0 0 0;}
+.safePz_em { display:inline-block; width:11px; height:11px; background:url(../img/topic_safe.png) -134px -196px no-repeat; vertical-align:middle; margin-right:8px;}
+.safeTz { padding:20px 0 30px 42px; font-size:0;}
+.safeTz_span { display:inline-block; width:137px; height:137px; background:url(../img/topic_safe.png) no-repeat; margin-right:60px;}
+.safeTz_span01 { background-position:0 -415px;}
+.safeTz_span02 { background-position:-142px -415px;}
+.safeTz_span03 { background-position:-284px -415px;}
+.safeShu { display:inline-block; width:1px; height:31px; font-size:0; background-color:#4888cf; margin:0 30px; vertical-align:middle;}
+.safeHb_span { display:inline-block; background:url(../img/topic_safe.png) no-repeat; vertical-align:middle;}
+.safeHb_span01 { width:226px; height:39px; background-position:0 -557px;}
+.safeHb_span02 { width:116px; height:62px; background-position:0 -601px;}
+.safeHb_span03 { width:172px; height:56px; background-position:0 -668px;}
+.safeHb_span04 { width:194px; height:41px; background-position:0 -729px;}
