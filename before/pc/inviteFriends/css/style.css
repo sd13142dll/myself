@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,span,blockquote { padding:0;margin:0;}
+body { font:14px/1.5 "Microsoft YaHei",Arial, Helvetica, sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+img { border:none; vertical-align:top;}  
+a { text-decoration:none;}
+ul { list-style:none;}
+table { border-collapse:collapse; border-spacing:0; }
+button, input, select, textarea { font-size:100%; }
+input,select,label { vertical-align:middle;outline:none;} 
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+.va_m { vertical-align:middle;}
+.ta_c { text-align:center;}
+.ta_l { text-align:left;}
+.float_l { float:left;}
+.float_r { float:right;}
+.font0 { font-size:0;}
+.font16 { font-size:16px;}
+.font18 { font-size:18px;}
+.font20 { font-size:20px;}
+.font22 { font-size:22px;}
+.c_666666 { color:#666666;}
+.mt2 { margin-top:2px;}
+.mt10 { margin-top:10px;}
+.mt15 { margin-top:15px;}
+.mt20 { margin-top:20px;}
+.mt25 { margin-top:25px;}
+.mt30 { margin-top:30px;}
+.mt35 { margin-top:35px;}
+.mt40 { margin-top:40px;}
+.mt50 { margin-top:50px;}
+.ml6 { margin-left:6px;}
+.ml7 { margin-left:7px;}
+.ml20 { margin-left:20px;}
+.ml25 { margin-left:25px;}
+.ml100 { margin-left:100px;}
+.pt25 { padding-top:25px;}
+.pt30 { padding-top:30px;}
+.pt35 { padding-top:35px;}
+.pt45 { padding-top:45px;}
+.pt45 { padding-top:45px;}
+.pl30 { padding-left:30px;}
+.pl74 { padding-left:74px;}
+
+.inviteBanner { height:821px; background:#f64f4f url(../img/inviteBanner.png) center 0 no-repeat; position:relative;}
+.bannerBlack { position:absolute; top:43px; left:50%; width:762px; height:318px; background:url(../img/bannerBlack.png) no-repeat; margin-left:-474px; opacity:0; opacity:1\9;}
+.inviteBannerAni .bannerBlack { -moz-animation:bannerBlack 0.5s linear 0s both; -webkit-animation:bannerBlack 0.5s linear 0s both; animation:bannerBlack 0.5s linear 0s both;}
+@-moz-keyframes bannerBlack{
+	0% { -moz-transform:scale(0,0); opacity:0}
+	40% { -moz-transform:scale(1.08,1.08); opacity:1}
+	60% { -moz-transform:scale(0.95,0.95); opacity:1}
+	80% { -moz-transform:scale(1.04,1.04); opacity:1}
+	100% { -moz-transform:scale(1,1); opacity:1}
+}
+@-webkit-keyframes bannerBlack{
+	0% { -webkit-transform:scale(0,0); opacity:0}
+	40% { -webkit-transform:scale(1.08,1.08); opacity:1}
+	60% { -webkit-transform:scale(0.95,0.95); opacity:1}
+	80% { -webkit-transform:scale(1.04,1.04); opacity:1}
+	100% { -webkit-transform:scale(1,1); opacity:1}
+}
+@keyframes bannerBlack{
+	0% { transform:scale(0,0); opacity:0}
+	40% { transform:scale(1.08,1.08); opacity:1}
+	60% { transform:scale(0.95,0.95); opacity:1}
+	80% { transform:scale(1.04,1.04); opacity:1}
+	100% { transform:scale(1,1); opacity:1}
+}
+
+.bannerBlack_text { position:absolute; top:68px; left:46px; width:630px; height:193px; background:url(../img/bannerBlack_text.png) no-repeat; opacity:0; opacity:1\9;}
+.inviteBannerAni .bannerBlack_text { -moz-animation:bannerBlack_text 0.6s linear 0.45s both; -webkit-animation:bannerBlack_text 0.6s linear 0.45s both; animation:bannerBlack_text 0.6s linear 0.45s both;}
+@-moz-keyframes bannerBlack_text{
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+@-webkit-keyframes bannerBlack_text{
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+@keyframes bannerBlack_text{
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+
+.bannerBlackIcon01 { display:block; position:absolute; top:-22px; left:-139px; width:221px; height:128px; background:url(../img/bannerBlackIcon01.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerBlackIcon02 { display:block; position:absolute; top:221px; left:-53px; width:107px; height:97px; background:url(../img/bannerBlackIcon02.png) no-repeat; opacity:0; opacity:1\9;}
+.bannerBlackIcon03 { display:block; position:absolute; top:15px; right:-40px; width:119px; height:84px; background:url(../img/bannerBlackIcon03.png) no-repeat; opacity:0; opacity:1\9;}
+.inviteBannerAni .bannerBlackIcon01 { -moz-animation:bannerBlackIcon01 0.3s linear 0.8s both; -webkit-animation:bannerBlackIcon01 0.3s linear 0.8s both; animation:bannerBlackIcon01 0.3s linear 0.8s both; -moz-transform-origin:100% 80%; -webkit-transform-origin:100% 80%; transform-origin:100% 80%;}
+@-moz-keyframes bannerBlackIcon01{
+	0% { -moz-transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes bannerBlackIcon01{
+	0% { -webkit-transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes bannerBlackIcon01{
+	0% { transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { transform:scale(1,1); opacity:1;}
+}
+
+.inviteBannerAni .bannerBlackIcon02 { -moz-animation:bannerBlackIcon02 0.3s linear 0.6s both; -webkit-animation:bannerBlackIcon02 0.3s linear 0.6s both; animation:bannerBlackIcon02 0.3s linear 0.6s both; -moz-transform-origin:100% 0%; -webkit-transform-origin:100% 0%; transform-origin:100% 0%;}
+@-moz-keyframes bannerBlackIcon02{
+	0% { -moz-transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes bannerBlackIcon02{
+	0% { -webkit-transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes bannerBlackIcon02{
+	0% { transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { transform:scale(1,1); opacity:1;}
+}
+.inviteBannerAni .bannerBlackIcon03 { -moz-animation:bannerBlackIcon03 0.3s linear 0.7s both; -webkit-animation:bannerBlackIcon03 0.3s linear 0.7s both; animation:bannerBlackIcon03 0.3s linear 0.7s both; -moz-transform-origin:0% 80%; -webkit-transform-origin:0% 80%; transform-origin:0% 80%;}
+@-moz-keyframes bannerBlackIcon03{
+	0% { -moz-transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { -moz-transform:scale(1,1); opacity:1;}
+}
+@-webkit-keyframes bannerBlackIcon03{
+	0% { -webkit-transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { -webkit-transform:scale(1,1); opacity:1;}
+}
+@keyframes bannerBlackIcon03{
+	0% { transform:scale(0.4,0.4); opacity:0;}
+	90% { opacity:0.4;}
+	100% { transform:scale(1,1); opacity:1;}
+}
+
+.bannerIphone { position:absolute; top:226px; left:50%; width:225px; height:124px; background:url(../img/bannerIphone.png) no-repeat; margin-left:422px;}
+.bannerHand { position:absolute; top:80px; left:50%; width:302px; height:359px; background:url(../img/bannerHand.png) no-repeat; margin-left:197px;}
+.inviteBannerAni .bannerHand { -moz-animation:bannerHand 1.3s linear 1.2s infinite; -webkit-animation:bannerHand 1.3s linear 1.2s infinite; animation:bannerHand 1.3s linear 1.2s infinite; -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; transform-origin:50% 100%;}
+@-moz-keyframes bannerHand{
+	0% { -moz--transform:rotate(0deg); opacity:1;}
+	25% { -moz--transform:rotate(-2deg); opacity:1;}
+	50% { -moz--transform:rotate(0deg); opacity:1;}
+	75% { -moz--transform:rotate(2deg); opacity:1;}
+	100% { -moz--transform:rotate(0deg); opacity:1;}
+}
+@-webkit-keyframes bannerHand{
+	0% { -webkit-transform:rotate(0deg); opacity:1;}
+	25% { -webkit-transform:rotate(-2deg); opacity:1;}
+	50% { -webkit-transform:rotate(0deg); opacity:1;}
+	75% { -webkit-transform:rotate(2deg); opacity:1;}
+	100% { -webkit-transform:rotate(0deg); opacity:1;}
+}
+@keyframes bannerHand{
+	0% { transform:rotate(0deg); opacity:1;}
+	25% { transform:rotate(-2deg); opacity:1;}
+	50% { transform:rotate(0deg); opacity:1;}
+	75% { transform:rotate(2deg); opacity:1;}
+	100% { transform:rotate(0deg); opacity:1;}
+}
+
+.bannerFloor { position:absolute; bottom:0; left:50%; width:1920px; height:528px; background:url(../img/bannerFloor.png) no-repeat; margin-left:-960px;}
+
+.inviteShare { position:absolute; z-index:4; top:0; right:50%; width:205px; background-color:#ffffff; border-radius:0 0 7px 7px; margin-right:-500px; text-align:center; padding:9px 0;}
+.inviteShareP { font-size:16px; color:#f64f4f;}
+.inviteShare_column { font-size:0; margin-top:5px;}
+.inviteShareIcon { display:inline-block; width:25px; height:23px; background:url(../img/inviteShare.png) no-repeat; margin:0 9px; filter:alpha(opacity=50); opacity:0.5; -moz-opacity:0.5; -khtml-opacity:0.5; position:relative;}
+.inviteShareIcon:hover { filter:alpha(opacity=100); opacity:1; -moz-opacity:1; -khtml-opacity:1;}
+.inviteShareIcon01 { background-position:0 0;}
+.inviteShareIcon02 { background-position:0 -23px;}
+.inviteShareIcon03 { background-position:0 -46px;}
+.inviteShareIcon04 { background-position:0 -69px;}
+
+.inviteQr { position:absolute; z-index:2; left:-79px; top:23px; text-align:center; cursor:default; display:none;}
+.inviteQrArrow { display:inline-block; width:25px; height:22px; background:url(../img/invite.png) -412px -34px no-repeat;}
+.inviteQrContent { font-size:14px; background-color:#ffffff; padding:0 20px 20px 20px;}
+.inviteQrContent p { color:#999999; padding:12px 0 5px 0;}
+.inviteShareIcon:hover .inviteQr  { display:block;}
+
+.inviteBk { position:absolute; left:50%; bottom:0; width:1103px; height:312px; background:url(../img/inviteBk.png) no-repeat; margin:0 0 0 -578px;}
+.inviteBkN { position:absolute; left:89px; top:9px; width:942px; height:214px; color:#ffffff; text-align:center;}
+.inviteBk_title { font-size:18px; padding-top:25px;}
+.inviteBtn { display:inline-block; width:260px; height:71px; line-height:67px; background:url(../img/invite.png) 0 0 no-repeat; text-align:center; font-size:31px; font-weight:bold; color:#f3483e;}
+.inviteBtn:hover { color:#f3483e; background-position:0 -76px;}
+.inviteBtn_gray { height:67px; color:#ffffff; background:#b3b3b3; border-radius:15px;}
+.inviteBtn_gray:hover { color:#ffffff;}
+.inviteBtnS { display:inline-block; width:197px; height:57px; line-height:53px; background:url(../img/invite.png) 0 -270px no-repeat; text-align:center; font-size:24px; font-weight:bold; color:#f3483e;}
+.inviteBtnS:hover { color:#f3483e; background-position:-202px -270px;}
+.inviteBkBottom { position:absolute; bottom:50px; width:100%;}
+.inviteA { font-size:16px; color:#ffffff; text-decoration:underline;}
+.inviteA:hover { color:#ffffff;} 
+.inviteYellow { color:#ffe51a;}
+
+.inviteDeep { background-color:#feb312; position:relative;}
+.inviteLight { background-color:#ffd030; position:relative;}
+.inviteArrow { position:absolute; left:50%; top:0; width:140px; height:40px; background:url(../img/invite.png) no-repeat; margin-left:-70px;}
+.inviteArrowL { background-position:-265px 0;}
+.inviteArrowD { background-position:-265px -45px;}
+.inviteMain { width:912px; margin:0 auto; color:#c23c08; border-left:5px solid #e87c09; padding-left:88px; position:relative; padding-bottom:70px;}
+.inviteBall { position:absolute; z-index:2; left:-59px; top:44px; display:block; width:131px; height:113px; background:url(../img/invite.png) no-repeat;}
+.inviteBall_first { top:0;}
+.inviteBall01 { background-position:0 -152px;} 
+.inviteBall02 { background-position:-136px -152px;} 
+.inviteBall03 { background-position:-272px -152px;} 
+.inviteBall04 { background-position:-408px -152px;} 
+.inviteTitle { font-size:36px; font-weight:bold; color:#ffffff; line-height:normal;}
+
+/*活动奖励*/
+.inviteJlt { font-size:20px; margin-top:20px;}
+.inviteJlt_b { font-weight:normal; font-size:16px; color:#ce4f1e;}
+.inviteRball { display:inline-block; width:29px; height:29px; line-height:29px; text-align:center; font-size:20px; font-style:normal; color:#ffffff; background:url(../img/invite.png) -410px 0 no-repeat; vertical-align:middle;}
+.inviteDashed { font-size:0; border-bottom:1px dashed #dc7802;}
+.inviteCj { float:left; width:540px;}
+.inviteCjk { width:253px; background-color:#e87c09; text-align:center; padding:4px; margin-top:20px;}
+.inviteCjk_title { font-size:20px; color:#ffffff; padding:10px 0;}
+
+/*参加刮刮卡*/
+.inviteCanvas { height:98px; overflow:hidden; position:relative;}
+.inviteCanvas2 { height:159px;}
+.inviteCanvas_posTxt { position:absolute; left:0; top:0; width:100%; height:100%;}
+.inviteCanvas_p { font-size:20px; color:#dddddd; text-align:left; padding:20px 5px 0 5px;}
+.inviteCanvas_text { line-height:159px; font-size:30px; color:#e87c09; background-color:#ffffff;}
+.inviteCanvas_table { display:table; width:100%; height:100%; background-color:#ffffff;}
+.inviteCanvas_cell { display:table-cell; vertical-align:middle;}
+.inviteSmaile { display:inline-block; width:61px; height:39px; background:url(../img/invite.png) -265px -90px no-repeat;}
+.inviteCanvas_cell p { font-size:18px; color:#e87c09;}
+#redux { position:absolute; top:0px; left:0px; z-index:2; cursor:pointer;}
+.inviteCjk_bottom { height:61px; background-color:#ffeaa1;}
+.inviteCjk_g { font-size:30px; color:#e87c09; line-height:61px;}
+.inviteXYZ { float:right; width:308px; height:310px; background-color:#e87c09; margin-top:18px;}
+.inviteXYZ_title { display:inline-block; width:119px; height:39px; line-height:38px; font-size:24px; color:#ffffff; background-color:#a64606;}
+.inviteXYZ_line { width:274px; height:13px; background-color:#a64606; border:4px solid #d66c08; margin:12px auto 0 auto;}
+.inviteXYZ_k { width:262px; height:190px; margin:-10px auto 0 auto; background:url(../img/inviteXYZ_k.png) no-repeat;}
+.inviteXYZ_list { width:224px; margin:0 auto; font-size:18px; padding:15px 0 0 0;}
+.inviteXYZ_list li { height:42px; line-height:42px; border-top:1px dashed #f5b168;}
+.inviteXYZ_front { float:left;}
+.inviteXYZ_after { float:right;}
+
+/*达人榜单*/
+.inviteDeepWp { background-color:#e87c09; padding:3px 8px 8px 8px; margin-top:30px;}
+.inviteDeepTable { width:100%; font-size:22px;}
+.inviteDeepTable th,.inviteDeepTable td { text-align:center; height:50px;}
+.inviteDeepTable th { color:#ffffff;}
+.inviteDeepTable td { background-color:#ffeaa1; border:1px solid #e9c670;}
+.inviteDeepScroll { height:400px; overflow-y:auto;}
+.inviteNrA { font-size:18px; color:#c23c08; text-decoration:underline;}
+.inviteNrA:hover { color:#ffffff;}
+
+/*投资港美股*/
+.inviteTz { position:relative; width:967px; height:348px; background:url(../img/inviteTz.jpg) no-repeat; margin:40px 0 10px -20px;}
+.inviteTzA { position:absolute; left:644px; bottom:0; display:block; width:176px; height:36px; line-height:36px; text-align:center; color:#e87c09; text-decoration:underline;}
+.inviteTzA:hover { color:#cc6900;}
+
+/*活动规则*/
+.inviteDetail { margin-top:40px;}
+.inviteDetail li { font-size:0;}
+.inviteDetail_icon { display:inline-block; width:24px; height:24px; line-height:24px; text-align:center; font-size:16px; font-style:normal; color:#ffffff; background:url(../img/invite.png) -444px 0 no-repeat; vertical-align:top; margin-top:6px;}
+.inviteDetail_span { display:inline-block; width:877px; line-height:35px; font-size:16px; margin-left:11px;}
+
+/*右侧导航*/
+.pendant { position:fixed; z-index:9; right:10px; top:120px; width:158px; height:346px; font-size:18px; background:url(../img/pendant.png) no-repeat; display:none;}
+.pendantA { position:absolute; left:14px; display:block; width:126px; height:30px; line-height:30px; text-align:center; color:#ffffff;}
+.pendantA:hover { color:#FF0;}
+.pendantA01 { top:158px;}
+.pendantA02 { top:200px;}
+.pendantA03 { top:242px;}
+.pendantA04 { top:284px;}
+.backTop { position:absolute; left:14px; top:316px; color:#a51717; width:126px; height:30px; line-height:30px; text-align:center;}
+.backTop:hover { color:#FF0;}
+
+/*弹框*/
+.doTaskBox { width:480px; color:#333333; background-color:#FFFFFF;}
+.doTaskBox02 { width:600px;}
+.doTaskBoxTop { height:40px; line-height:40px; color:#FFFFFF; background-color:#eb3e32; font-size:16px; position:relative; padding-left:20px;}
+.doTaskBox_close { display:block; position:absolute; right:10px; top:10px; width:20px; height:20px; background:url(../img/doTaskBox_close.png) center center no-repeat;}
+.doTaskBox_conent { padding:30px 0 30px 0;}
+.doTaskBox_conent2 { padding:30px 0 20px 0;}
+.doTaskBox_conentLR { font-size:16px; padding:0 30px;}
+.doTaskBox_item { width:350px; margin:0 auto; text-align:left;}
+.doTaskBox_column { height:42px;}
+.doTaskBox_name { float:left; width:70px; margin-right:4px; text-align:right; line-height:40px;}
+.doTaskBox_input { float:left; width:264px; height:22px; color:#333333; padding:9px 0 9px 10px; font-size:14px; border:1px solid #dddddd;}
+.doTaskBox_input02 { width:129px;}
+.doTaskBox_select { float:left; width:276px; height:42px; color:#333333; padding:10px 10px 10px 6px; font-size:14px; border:1px solid #dddddd;}
+.doTaskBox_selectS { width:135px;}
+
+.doTaskBox_inputE { border:1px solid #FF0000;}
+.doTaskBox_error { height:25px; line-height:25px; color:#FF0000; padding-left:74px;}
+.doTaskBox_code { float:right; width:100px; height:40px; line-height:40px; padding:0 12px; text-align:center; color:#FFFFFF; background-color:#ff6600; border-radius:4px; margin:1px 0 0 0;}
+.doTaskBox_code:hover { color:#FFFFFF; background-color:#fa761e;}
+.doTaskBox_again { background-color:#cccccc;}
+.doTaskBox_again:hover { background-color:#cccccc; cursor:default;}
+.doTaskBox_label { font-size:14px; cursor:pointer; vertical-align:middle;}
+.doTaskBox_checkbox { margin:-1px 5px 0 0; vertical-align:middle;}
+.doTaskBox_link { margin-left:7px; text-decoration:underline; vertical-align:middle;}
+.doTaskBox_bottom { background-color:#f1f1f1; padding:14px 0; text-align:center;}
+.doTaskBox_loginA { color:#666666;}
+.taskBtn { display:inline-block; height:45px; line-height:45px; font-size:22px; color:#ffffff; background-color:#ff2828; padding:0 35px; box-shadow:0 3px #b51c1c; border-radius:5px;}
+.taskBtn:hover { color:#ffffff; background-color:#e41515;}
+.doTaskBox_table { width:100%;}
+.doTaskBox_table th,.doTaskBox_table td { text-align:center;} 
+.doTaskBox_table th { height:30px; background-color:#dddddd;}
+.doTaskBox_table td { height:35px; border:1px solid #dddddd;}
+
+.doTaskBox_scroll { max-height:181px; overflow-y:auto;}
+
+.shareContent { font-size:0;}
+.shareTitle { font-size:18px; color:#49b8e8; vertical-align:middle;}
+.shareTitle02 { font-size:16px; color:#5d5d5d;}
+.shareInput { width:260px; height:27px; line-height:27px; border:none; border:1px solid #d4d4d4; padding:0 5px; font-size:14px; color:#5d5d5d;}
+.shareBtn { display:inline-block; height:29px; line-height:29px; font-size:16px; color:#ffffff; background-color:#24a5dc; padding:0 10px; vertical-align:middle;}
+.shareBtn:hover { color:#ffffff; background-color:#1792c6;}
+.shareIcon { display:inline-block; width:64px; height:64px; background:url(../img/shareIcon.png) no-repeat; margin:0 5px 0 20px; vertical-align:middle; position:relative;}
+.shareIcon_wechat { background-position:0 0;}
+.shareIcon_qqzone { background-position:0 -69px;}
+.shareIcon_weibo { background-position:0 -138px;}
+.shareIcon_qq { background-position:0 -207px;}
+.inviteQr2 { top:70px; left:-60px;}
+.inviteQr3 { top:93px; left:-60px;}
+.shareIcon:hover .inviteQr { display:block;}
+
+.inviteFxInput { width:461px; height:42px; border:none; color:#555555; background-color:#ffffff; padding:0 10px;}
+.inviteFxBtn { display:inline-block; width:103px; height:42px; line-height:42px; text-align:center; color:#c65808; background-color:#ffd030; border-radius:5px; margin-left:4px;}
+.inviteFxBtn:hover { color:#c65808; background-color:#ffc70a;}
+.inviteFxItem { display:inline-block; width:147px; text-align:center; vertical-align:top;}
+.inviteFxItem .shareIcon { margin:0 0 5px 0;}
+.inviteFxP { font-size:16px;}
+.inviteFxItem span { font-size:14px; color:#ffd030;}
+
+/*prompt*/
+.prompt { height:40px; line-height:40px; font-size:16px; color:#ffffff; background-color:#912e2e; text-align:center;}
+.promptIcon { display:inline-block; width:20px; height:16px; background:url(../img/invite.png) -410px -61px no-repeat; vertical-align:text-top; margin:4px 15px 0 0;}
